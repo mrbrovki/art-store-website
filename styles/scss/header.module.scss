@@ -1,0 +1,17 @@
+@import "variables.scss";
+
+.header_container{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 8rem;
+ padding: 0 8rem;
+ width: 100vw;
+ background-color: $clr-white;
+
+ .right{
+  display: flex;
+  align-items: center;
+  line-height: 4rem;
+ }
+}

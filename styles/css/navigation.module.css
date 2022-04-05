@@ -1,0 +1,11 @@
+.nav_container {
+  display: inline-block;
+}
+
+.nav_container .link {
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  padding: 0 1rem;
+}
+/*# sourceMappingURL=navigation.module.css.map */

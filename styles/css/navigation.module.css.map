@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,cAAc,CAAA;EACb,OAAO,EAAE,YAAY;CAOrB;;AARD,AAEC,cAFa,CAEb,KAAK,CAAA;EACJ,SAAS,EAAE,MAAM;EACjB,cAAc,EAAE,MAAM;EACtB,cAAc,EAAE,SAAS;EACzB,OAAO,EAAE,MAAM;CACf",
+    "sources": [
+        "../scss/navigation.module.scss",
+        "../scss/_variables.scss"
+    ],
+    "names": [],
+    "file": "navigation.module.css"
+}
