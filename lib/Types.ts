@@ -20,20 +20,7 @@ export interface Photo {
   alt: string
 };
 
-export interface ErrorResponse {
-  error: string;
-}
-
-export type MediaReturn =
-  | {
-      page: number;
-      per_page: number;
-      total_results: number;
-      media: ({ type: "Photo" })[];
-    }
-  | ErrorResponse;
-
-export type CollectionData = {
+export interface CollectionData{
     page: number;
     per_page: number;
     total_results: number;
