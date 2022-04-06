@@ -1,0 +1,11 @@
+.featured_container{
+ width: 240vw;
+ .wrapper{
+  display: inline-block;
+  padding: 3rem;
+  background-color: aqua;
+  img{
+   margin: 2rem;
+  }
+ }
+}

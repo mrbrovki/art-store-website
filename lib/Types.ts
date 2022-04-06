@@ -17,6 +17,7 @@ export interface Photo {
     landscape: string;
     tiny: string;
   };
+  alt: string
 };
 
 export interface ErrorResponse {

@@ -1,0 +1,14 @@
+.featured_container {
+  width: 240vw;
+}
+
+.featured_container .wrapper {
+  display: inline-block;
+  padding: 3rem;
+  background-color: aqua;
+}
+
+.featured_container .wrapper img {
+  margin: 2rem;
+}
+/*# sourceMappingURL=home.module.css.map */
