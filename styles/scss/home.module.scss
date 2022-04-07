@@ -1,8 +1,10 @@
+@import "variables";
+
 .category_name{
  margin-left: 12rem;
  font-weight: 400;
 }
-.featured_container{
+.featured_paintings_container{
   margin-top: 3rem;
  width: 360rem;
  height: 20rem;
@@ -25,15 +27,15 @@
  }
 }
 
-  #wrapper_1 {
-  left: 0;
-   animation: wrapper_1_anim 30s linear infinite;
-  }
+#wrapper_1 {
+left: 0;
+  animation: wrapper_1_anim 30s linear infinite;
+}
   
-  #wrapper_2 {
-   left: 180rem;
-   animation: wrapper_2_anim 30s linear infinite;
-  }
+#wrapper_2 {
+  left: 180rem;
+  animation: wrapper_2_anim 30s linear infinite;
+}
 
 @keyframes wrapper_1_anim {
  0%{
@@ -64,4 +66,45 @@
  100%{
   left: -180rem;
  }
+}
+
+.featured_artists_container{
+  margin-top: 3rem;
+  background-color: $clr-grey;
+  width: 100%;
+  height: 20rem;
+
+  .featured_heading{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 3rem 0 2rem 12rem;
+    text-transform: uppercase;
+  }
+  .flex_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .avatar_container{
+      height: 7rem;
+      border: 1px solid $clr-avatar-border;
+      margin: 0 1rem;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      .avatar_image{
+        float: left;
+      }
+      .info{
+        margin: 0 1rem 0;
+        .avatar_name {
+          margin: 0;
+        }
+        .avatar_location {
+          color: $clr-avatar-location;
+          margin: 0;
+        }
+      }
+    }
+  }
 }

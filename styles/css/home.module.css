@@ -3,7 +3,7 @@
   font-weight: 400;
 }
 
-.featured_container {
+.featured_paintings_container {
   margin-top: 3rem;
   width: 360rem;
   height: 20rem;
@@ -17,7 +17,7 @@
   position: relative;
 }
 
-.featured_container .images_wrapper {
+.featured_paintings_container .images_wrapper {
   position: absolute;
   width: 180rem;
   display: -ms-grid;
@@ -25,7 +25,7 @@
   grid-auto-flow: column;
 }
 
-.featured_container .images_wrapper .image_container {
+.featured_paintings_container .images_wrapper .image_container {
   display: inline-block;
   position: relative;
   height: 20rem;
@@ -106,5 +106,61 @@
   100% {
     left: -180rem;
   }
+}
+
+.featured_artists_container {
+  margin-top: 3rem;
+  background-color: #F4F4F2;
+  width: 100%;
+  height: 20rem;
+}
+
+.featured_artists_container .featured_heading {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 3rem 0 2rem 12rem;
+  text-transform: uppercase;
+}
+
+.featured_artists_container .flex_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.featured_artists_container .flex_container .avatar_container {
+  height: 7rem;
+  border: 1px solid #8787874d;
+  margin: 0 1rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.featured_artists_container .flex_container .avatar_container .avatar_image {
+  float: left;
+}
+
+.featured_artists_container .flex_container .avatar_container .info {
+  margin: 0 1rem 0;
+}
+
+.featured_artists_container .flex_container .avatar_container .info .avatar_name {
+  margin: 0;
+}
+
+.featured_artists_container .flex_container .avatar_container .info .avatar_location {
+  color: #878787db;
+  margin: 0;
 }
 /*# sourceMappingURL=home.module.css.map */

@@ -17,7 +17,7 @@ export interface Photo {
     landscape: string;
     tiny: string;
   };
-  alt: string
+  alt: string;
 };
 
 export interface CollectionData{
@@ -25,4 +25,13 @@ export interface CollectionData{
     per_page: number;
     total_results: number;
     media: (Photo & {type: "Photo"})[];
-}
+};
+
+export type Avatars = {
+  id: number;
+  image: string;
+  first_name: string;
+  last_name: string;
+  city: string;
+  country: string;
+}[];
