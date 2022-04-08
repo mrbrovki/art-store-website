@@ -6,7 +6,7 @@
 .featured_paintings_container {
   margin-top: 3rem;
   width: 360rem;
-  height: 20rem;
+  height: 40rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,22 +14,72 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.featured_paintings_container:hover .images_wrapper {
+  -webkit-animation-play-state: paused !important;
+          animation-play-state: paused !important;
 }
 
 .featured_paintings_container .images_wrapper {
   position: absolute;
   width: 180rem;
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .featured_paintings_container .images_wrapper .image_container {
-  display: inline-block;
+  width: 22rem;
+  height: 35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.featured_paintings_container .images_wrapper .image_container:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.19);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.19);
+}
+
+.featured_paintings_container .images_wrapper .image_container .image {
+  display: block;
   position: relative;
-  height: 20rem;
   width: 18rem;
+}
+
+.featured_paintings_container .images_wrapper .image_container .image_name {
+  margin: 1rem 0 0;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.featured_paintings_container .images_wrapper .image_container .artist_name {
+  margin: 0;
+  color: #666666;
 }
 
 #wrapper_1 {
@@ -59,7 +109,7 @@
     opacity: 0;
     left: 180rem;
   }
-  75% {
+  52% {
     opacity: 1;
   }
   100% {
@@ -82,7 +132,7 @@
     opacity: 0;
     left: 180rem;
   }
-  75% {
+  52% {
     opacity: 1;
   }
   100% {
@@ -109,10 +159,10 @@
 }
 
 .featured_artists_container {
-  margin-top: 3rem;
+  margin-top: 8rem;
   background-color: #F4F4F2;
   width: 100%;
-  height: 20rem;
+  height: calc(100vh - 38rem);
 }
 
 .featured_artists_container .featured_heading {

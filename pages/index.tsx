@@ -3,6 +3,7 @@ import { createClient } from 'pexels';
 import {Avatars, CollectionData} from '../lib/Types';
 import Image from 'next/image';
 import styles from '../styles/css/home.module.css';
+import { useState } from 'react';
 
 export const getStaticProps:GetStaticProps = async () =>{
   const client = createClient(process.env.ENV_PEXELS_API_KEY as string);
@@ -13,7 +14,6 @@ export const getStaticProps:GetStaticProps = async () =>{
   }
 }
 const Home: NextPage<{collectionData: CollectionData, avatars: Avatars}> = ({collectionData: {media}, avatars}) => {
-  console.log(avatars);
   return (
     <>
       <h1 className={styles.category_name}>Featured Paintings</h1>
@@ -22,16 +22,24 @@ const Home: NextPage<{collectionData: CollectionData, avatars: Avatars}> = ({col
             {media.slice(0, 8).map(photo=>{
               return(
                 <div key={photo.id} className={styles.image_container}>
-                   <Image src={photo.src.medium} layout='fill' objectFit='contain' objectPosition='center' alt={photo.alt} quality={50}/>
+                  <div className={styles.image}>
+                    <Image src={photo.src.medium} layout='responsive' width={photo.width} height={photo.height} alt={photo.alt} quality={50}/>
+                  <p className={styles.image_name}>Wallowing Breeze</p>
+                  <p className={styles.artist_name}>Pablo Picasso</p>
+                  </div>
                 </div>
               );
             })}
           </div>
-          <div className={styles.images_wrapper}>
+          <div className={styles.images_wrapper } id={styles.wrapper_2}>
             {media.slice(8, 16).map(photo=>{
               return(
-                <div key={photo.id} className={styles.image_container} id={styles.wrapper_2}>
-                   <Image src={photo.src.medium} layout='fill' objectFit='contain' objectPosition='center' alt={photo.alt} quality={50}/>
+                <div key={photo.id} className={styles.image_container}>
+                  <div className={styles.image}>
+                    <Image src={photo.src.medium} layout='responsive' width={photo.width} height={photo.height} alt={photo.alt} quality={50}/>
+                  <p className={styles.image_name}>Wallowing Breeze</p>
+                  <p className={styles.artist_name}>Pablo Picasso</p>
+                  </div>
                 </div>
               );
             })}
