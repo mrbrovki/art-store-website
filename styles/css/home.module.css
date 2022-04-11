@@ -7,16 +7,7 @@
   margin-top: 3rem;
   width: 360rem;
   height: 40rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
 }
 
 .featured_paintings_container:hover .images_wrapper {
@@ -42,33 +33,39 @@
 }
 
 .featured_paintings_container .images_wrapper .image_container {
-  width: 22rem;
-  height: 35rem;
+  width: 22.5rem;
+  height: 40rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 2rem;
 }
 
 .featured_paintings_container .images_wrapper .image_container:hover {
   cursor: pointer;
-  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.19);
-          box-shadow: 0 0 30px rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.19);
+          box-shadow: 0 0 2rem rgba(0, 0, 0, 0.19);
+}
+
+.featured_paintings_container .images_wrapper .image_container:hover .image {
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.464);
+          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.464);
 }
 
 .featured_paintings_container .images_wrapper .image_container .image {
   display: block;
   position: relative;
-  width: 18rem;
+  width: 18.5rem;
 }
 
 .featured_paintings_container .images_wrapper .image_container .image_name {

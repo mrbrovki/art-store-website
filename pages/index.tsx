@@ -24,9 +24,9 @@ const Home: NextPage<{collectionData: CollectionData, avatars: Avatars}> = ({col
                 <div key={photo.id} className={styles.image_container}>
                   <div className={styles.image}>
                     <Image src={photo.src.medium} layout='responsive' width={photo.width} height={photo.height} alt={photo.alt} quality={50}/>
+                  </div>
                   <p className={styles.image_name}>Wallowing Breeze</p>
                   <p className={styles.artist_name}>Pablo Picasso</p>
-                  </div>
                 </div>
               );
             })}
@@ -37,9 +37,9 @@ const Home: NextPage<{collectionData: CollectionData, avatars: Avatars}> = ({col
                 <div key={photo.id} className={styles.image_container}>
                   <div className={styles.image}>
                     <Image src={photo.src.medium} layout='responsive' width={photo.width} height={photo.height} alt={photo.alt} quality={50}/>
+                   </div>
                   <p className={styles.image_name}>Wallowing Breeze</p>
                   <p className={styles.artist_name}>Pablo Picasso</p>
-                  </div>
                 </div>
               );
             })}
