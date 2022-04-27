@@ -2,7 +2,10 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../scss/Layout/Header/navigation.module.scss"
+        "../scss/Layout/Header/navigation.module.scss",
+        "../scss/_variables.scss",
+        "../scss/_responsive.scss",
+        "../scss/_variables.scss"
     ],
     "names": [],
     "file": "navigation.module.css"

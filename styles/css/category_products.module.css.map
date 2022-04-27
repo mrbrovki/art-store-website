@@ -2,7 +2,10 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../scss/Category/Products/category_products.module.scss"
+        "../scss/Category/Products/category_products.module.scss",
+        "../scss/_variables.scss",
+        "../scss/_responsive.scss",
+        "../scss/_variables.scss"
     ],
     "names": [],
     "file": "category_products.module.css"

@@ -2,7 +2,10 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../scss/Featured/Paintings/featured_paintings.module.scss"
+        "../scss/Featured/Paintings/featured_paintings.module.scss",
+        "../scss/_variables.scss",
+        "../scss/_responsive.scss",
+        "../scss/_variables.scss"
     ],
     "names": [],
     "file": "featured_paintings.module.css"

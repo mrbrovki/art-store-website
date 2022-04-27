@@ -35,3 +35,11 @@ export type Avatars = {
   city: string;
   country: string;
 }[];
+
+export interface State{};
+export type Action = 
+| {type: unknown; payload: unknown}
+
+export interface AppContextProps<T>{
+ children:T;
+}

@@ -2,7 +2,10 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../scss/Product/Details/go_back_btn.module.scss"
+        "../scss/Product/Details/go_back_btn.module.scss",
+        "../scss/_variables.scss",
+        "../scss/_responsive.scss",
+        "../scss/_variables.scss"
     ],
     "names": [],
     "file": "go_back_btn.module.css"

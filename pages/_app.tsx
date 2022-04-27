@@ -3,6 +3,7 @@ import React from 'react';
 import { AppProps } from 'next/app';
 //  components
 import Layout from '../components/Layout';
+//  context
 //  styles
 import '../styles/css/globals.css';
 

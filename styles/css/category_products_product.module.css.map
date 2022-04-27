@@ -2,11 +2,11 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../scss/Product/Details/Shipment/add_to_cart.module.scss",
+        "../scss/Category/Products/category_products_product.module.scss",
         "../scss/_variables.scss",
         "../scss/_responsive.scss",
         "../scss/_variables.scss"
     ],
     "names": [],
-    "file": "add_to_cart.module.css"
+    "file": "category_products_product.module.css"
 }

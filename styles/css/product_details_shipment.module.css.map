@@ -2,7 +2,10 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../scss/Product/Details/Shipment/product_details_shipment.module.scss"
+        "../scss/Product/Details/Shipment/product_details_shipment.module.scss",
+        "../scss/_variables.scss",
+        "../scss/_responsive.scss",
+        "../scss/_variables.scss"
     ],
     "names": [],
     "file": "product_details_shipment.module.css"

@@ -3,7 +3,7 @@ import React, {FC} from 'react';
 // components
 // context
 // styles
-import styles from '../../styles/css/product.module.css';
+import styles from '../../../styles/css/category_products_product.module.css';
 
 
 
