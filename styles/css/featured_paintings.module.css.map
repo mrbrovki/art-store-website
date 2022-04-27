@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/Featured/Paintings/featured_paintings.module.scss"
+    ],
+    "names": [],
+    "file": "featured_paintings.module.css"
+}

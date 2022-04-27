@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../scss/main.module.scss"
+        "../scss/Layout/main.module.scss"
     ],
     "names": [],
     "file": "main.module.css"

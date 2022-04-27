@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/Category/Products/category_products.module.scss"
+    ],
+    "names": [],
+    "file": "category_products.module.css"
+}

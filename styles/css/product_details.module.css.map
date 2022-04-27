@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/Product/Details/product_details.module.scss"
+    ],
+    "names": [],
+    "file": "product_details.module.css"
+}

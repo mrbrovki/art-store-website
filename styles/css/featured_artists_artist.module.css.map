@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/Featured/Artists/featured_artists_artist.module.scss"
+    ],
+    "names": [],
+    "file": "featured_artists_artist.module.css"
+}

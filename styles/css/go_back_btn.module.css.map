@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/Product/Details/go_back_btn.module.scss"
+    ],
+    "names": [],
+    "file": "go_back_btn.module.css"
+}

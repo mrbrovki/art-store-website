@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/Product/Details/Shipment/add_to_cart.module.scss"
+    ],
+    "names": [],
+    "file": "add_to_cart.module.css"
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/Featured/featured.module.scss"
+    ],
+    "names": [],
+    "file": "featured.module.css"
+}
