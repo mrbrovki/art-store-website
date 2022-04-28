@@ -1,1 +1,7 @@
-/* No CSS *//*# sourceMappingURL=cart.module.css.map */
+@media (max-width: 10240px) {
+  .cart_container {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+}
+/*# sourceMappingURL=cart.module.css.map */

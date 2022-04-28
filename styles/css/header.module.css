@@ -1,1 +1,31 @@
-/* No CSS *//*# sourceMappingURL=header.module.css.map */
+@media (max-width: 10240px) {
+  .header_container {
+    display: -ms-grid;
+    display: grid;
+    height: 10rem;
+    -ms-grid-columns: 154px 1fr 24px 24px;
+        grid-template-columns: 154px 1fr 24px 24px;
+    grid-gap: 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header_container {
+    height: 8rem;
+    grid-gap: 1rem;
+    padding: 0 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header_container {
+    height: 6rem;
+    grid-gap: 0.5rem;
+    padding: 0 2rem;
+  }
+}
+/*# sourceMappingURL=header.module.css.map */

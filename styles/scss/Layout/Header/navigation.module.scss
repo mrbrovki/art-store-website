@@ -1,8 +1,83 @@
 @import '../../variables';
 @import '../../responsive';
 
-@include desktop {}
+@include desktop {
 
-@include tablet {}
+ .hamburger{
+  display: none;
+ }
 
-@include mobile {}
+ .nav_container{
+  justify-self: end;
+  width: 24rem;
+  
+  ul{
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+
+   .list_container{
+    list-style-type: none;
+    margin-left: -2.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.25rem;
+   }
+  }
+ }
+}
+
+@include tablet {
+
+ .nav_container {
+  width: 18rem;
+
+  ul {
+ 
+   .list_container {
+    font-size: 1rem;
+   }
+  }
+ }
+}
+
+@include mobile {
+
+ .hamburger{
+  display: block;
+  justify-self: end;
+
+  &:hover{
+   cursor: pointer;
+  }
+ }
+
+ .nav_container {
+  position: absolute;
+  width: 100%;
+  overflow-y: hidden;
+  top: 6rem;
+  left: 0;
+  background-color: $nav-mobile-bg-clr;
+  color: $clr-white;
+  transition: transform 0.3s;
+  padding: 0 2rem;
+
+  ul {
+ 
+   .list_container {
+    font-size: 1rem;
+   }
+  }
+ }
+
+ .hidden{
+  max-height: 0rem;
+  transform: rotateX(90deg);
+ }
+ 
+ .shown{
+  max-height: 4rem;
+  transform: rotateX(0deg);
+ }
+}

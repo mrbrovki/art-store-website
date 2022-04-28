@@ -1,7 +1,13 @@
 @import '../../variables';
 @import '../../responsive';
 
-@include desktop {}
+@include desktop {
+
+ .cart_container{
+  
+  justify-self: end;
+ }
+}
 
 @include tablet {}
 
