@@ -1,7 +1,31 @@
 @import '../../variables';
 @import '../../responsive';
 
-@include desktop {}
+@include desktop {
+
+  .painting_container{
+   height: 25rem;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: center;
+
+   .image_container{
+    position: relative;
+    width: 22rem;
+    height: 22rem;
+   }
+
+   .painting_name,
+   .artist_name{
+    margin: 0;
+    text-align: center;
+   }
+
+   &:hover{
+    box-shadow: 0 0 10px #00000021;
+   }
+  }
+ }
 
 @include tablet {}
 

@@ -20,21 +20,14 @@ export interface Photo {
   alt: string;
 };
 
+export type Media = (Photo & {type: "Photo"})[];
 export interface CollectionData{
     page: number;
     per_page: number;
     total_results: number;
-    media: (Photo & {type: "Photo"})[];
+    media: Media;
 };
 
-export type Avatars = {
-  id: number;
-  image: string;
-  first_name: string;
-  last_name: string;
-  city: string;
-  country: string;
-}[];
 
 export interface State{};
 export type Action = 
@@ -43,3 +36,12 @@ export type Action =
 export interface AppContextProps<T>{
  children:T;
 }
+
+export interface FeaturedArtist{
+  id: number;
+  image: string;
+  first_name: string;
+  last_name: string;
+  city: string;
+  country: string
+};

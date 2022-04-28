@@ -1,8 +1,48 @@
 @import '../../variables';
 @import '../../responsive';
 
-@include desktop {}
+@include desktop {
 
-@include tablet {}
+ .artists_container{
+  height: calc(100vh - 53rem);
+  background-color: $artists-bg-clr;
+  padding: 3rem 8rem;
+  .artists_heading{
+   text-transform: uppercase;
+   color: $clr-text-grey;
+   font-size: 1.25rem;
+   font-weight: 500;
+   margin: 0;
+  }
 
-@include mobile {}
+  .artists{
+   display: flex;
+   flex-flow: row nowrap;
+   align-items: center;
+   justify-content: center;
+  }
+ }
+}
+
+@include tablet {
+ .artists_container{
+  height: calc(100vh - 49rem);
+
+  .artists_heading {
+   text-align: center;
+  }
+
+  .artists{
+   flex-flow: column nowrap;
+  }
+
+ }
+ }
+
+
+@include mobile {
+
+ .artists_container{
+  height: calc(100vh - 40rem);
+ }
+}

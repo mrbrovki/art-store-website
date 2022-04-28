@@ -1,15 +1,23 @@
 import React, {FC} from 'react';
+import Image from 'next/image';
 // types
 // components
+import { FeaturedArtist } from '../../../lib/Types';
 // context
 // styles
 import styles from '../../../styles/css/featured_artists_artist.module.css';
 
 
 
-const Artist:FC = () => {
+const Artist:FC<{artistInfo:FeaturedArtist}> = ({artistInfo}) => {
  return (
-  <></>
+  <div className={styles.artist}>
+   <div className={styles.image_container}>
+    <Image src={artistInfo.image} layout='fill' objectFit='cover' quality={30}/>
+   </div>
+   <p className={styles.artist_name}>{artistInfo.first_name} {artistInfo.last_name}</p>
+   <p className={styles.artist_location}>{artistInfo.city}, {artistInfo.country}</p>
+  </div>
  );
 };
  

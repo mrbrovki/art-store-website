@@ -6,7 +6,7 @@
  .header_container{
   display: grid;
   height: 10rem;
-  grid-template-columns: 154px 1fr 24px 24px;
+  grid-template-columns: 154px 1fr 24px;
   grid-gap: 2rem;
   align-items: center;
   padding: 0 8rem;
@@ -26,7 +26,6 @@
  
  .header_container{
   height: 6rem;
-  grid-gap: 0.5rem;
   padding: 0 2rem;
  }
 }

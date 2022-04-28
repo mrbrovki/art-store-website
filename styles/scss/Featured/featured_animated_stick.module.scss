@@ -1,8 +1,23 @@
 @import '../variables';
 @import '../responsive';
 
-@include desktop {}
+@include desktop {
+ .stick_container{
+  position: relative;
+  width: 100%;
+  height: 12rem;
+  border-bottom: 1px solid black;
+ }
+}
 
-@include tablet {}
+@include tablet {
+ .stick_container{
+  height: 10rem;
+ }
+}
 
-@include mobile {}
+@include mobile {
+ .stick_container{
+  height: 8rem;
+ }
+}

@@ -1,8 +1,100 @@
 @import '../../variables';
 @import '../../responsive';
 
-@include desktop {}
+@include desktop {
+
+ .paintings_container{
+  height: 31rem;
+
+  .heading{
+   text-transform: capitalize;
+   height: 5rem;
+   font-size: 3rem;
+   font-weight: 400;
+   margin: 0 8rem;
+  }
+
+  .carousel{
+   display: flex;
+   justify-content: space-between;
+   height: 26rem;
+   width: 360rem;
+
+
+   .wrapper_1, .wrapper_2{
+    width: 180rem;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+   }
+
+   .wrapper_1{
+    left: 0;
+    animation: wrapper_1_anim 60s linear infinite;
+   }
+
+   .wrapper_2{
+    left: 180rem;
+    animation: wrapper_2_anim 60s linear infinite;
+   }
+  }
+ }
+}
 
 @include tablet {}
 
-@include mobile {}
+@include mobile {
+
+ .paintings_container{
+  height: 25rem;
+
+  .heading{
+   font-size: 2rem;
+   margin: 0;
+   text-align: center;
+  }
+
+  .carousel{
+   height: 21rem;
+  }
+ }
+}
+
+@keyframes wrapper_1_anim {
+ 0% {
+  left: 0;
+ }
+
+ 49% {
+  opacity: 1;
+ }
+
+ 50% {
+  left: -180rem;
+  opacity: 0;
+ }
+
+ 51% {
+  opacity: 0;
+  left: 180rem;
+ }
+
+ 52% {
+  opacity: 1;
+ }
+
+ 100% {
+  left: 0;
+ }
+}
+
+@keyframes wrapper_2_anim {
+ 0% {
+  left: 180rem;
+ }
+
+ 100% {
+  left: -180rem;
+ }
+}

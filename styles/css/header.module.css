@@ -3,8 +3,8 @@
     display: -ms-grid;
     display: grid;
     height: 10rem;
-    -ms-grid-columns: 154px 1fr 24px 24px;
-        grid-template-columns: 154px 1fr 24px 24px;
+    -ms-grid-columns: 154px 1fr 24px;
+        grid-template-columns: 154px 1fr 24px;
     grid-gap: 2rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -24,7 +24,6 @@
 @media (max-width: 768px) {
   .header_container {
     height: 6rem;
-    grid-gap: 0.5rem;
     padding: 0 2rem;
   }
 }

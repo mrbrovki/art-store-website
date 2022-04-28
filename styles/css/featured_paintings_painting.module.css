@@ -1,1 +1,30 @@
-/* No CSS *//*# sourceMappingURL=featured_paintings_painting.module.css.map */
+@media (max-width: 10240px) {
+  .painting_container {
+    height: 25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .painting_container .image_container {
+    position: relative;
+    width: 22rem;
+    height: 22rem;
+  }
+  .painting_container .painting_name,
+  .painting_container .artist_name {
+    margin: 0;
+    text-align: center;
+  }
+  .painting_container:hover {
+    -webkit-box-shadow: 0 0 10px #00000021;
+            box-shadow: 0 0 10px #00000021;
+  }
+}
+/*# sourceMappingURL=featured_paintings_painting.module.css.map */

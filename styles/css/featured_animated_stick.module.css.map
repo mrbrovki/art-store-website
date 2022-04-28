@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AEGC,MAAM,EAAE,SAAS,EAAE,OAAO;EFC1B,AAAA,gBAAgB,CAAA;IACf,QAAQ,EAAE,QAAQ;IAClB,KAAK,EAAE,IAAI;IACX,MAAM,EAAE,KAAK;IACb,aAAa,EAAE,eAAe;GAC9B;;;AEAD,MAAM,EAAE,SAAS,EAAE,MAAM;EFIzB,AAAA,gBAAgB,CAAA;IACf,MAAM,EAAE,KAAK;GACb;;;AEAD,MAAM,EAAE,SAAS,EAAE,KAAK;EFIxB,AAAA,gBAAgB,CAAA;IACf,MAAM,EAAE,IAAI;GACZ",
     "sources": [
         "../scss/Featured/featured_animated_stick.module.scss",
         "../scss/_variables.scss",
