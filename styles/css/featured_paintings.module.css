@@ -17,14 +17,15 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     height: 26rem;
+    overflow-x: hidden;
     width: 360rem;
   }
   .paintings_container .carousel .wrapper_1, .paintings_container .carousel .wrapper_2 {
-    width: 180rem;
-    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 180rem;
+    position: absolute;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-orient: horizontal;
@@ -44,17 +45,47 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .paintings_container {
+    height: 28rem;
+  }
+  .paintings_container .heading {
+    margin: 0 5rem;
+    font-size: 2.5rem;
+    height: 4rem;
+  }
+  .paintings_container .carousel {
+    height: 24rem;
+  }
+}
+
 @media (max-width: 768px) {
   .paintings_container {
     height: 25rem;
   }
   .paintings_container .heading {
     font-size: 2rem;
+    height: 3rem;
     margin: 0;
     text-align: center;
   }
   .paintings_container .carousel {
-    height: 21rem;
+    height: 22rem;
+    width: 300rem;
+  }
+  .paintings_container .carousel .wrapper_1,
+  .paintings_container .carousel .wrapper_2 {
+    width: 150rem;
+  }
+  .paintings_container .carousel .wrapper_1 {
+    left: 0;
+    -webkit-animation: wrapper_1_anim_mobile 60s linear infinite;
+            animation: wrapper_1_anim_mobile 60s linear infinite;
+  }
+  .paintings_container .carousel .wrapper_2 {
+    left: 150rem;
+    -webkit-animation: wrapper_2_anim_mobile 60s linear infinite;
+            animation: wrapper_2_anim_mobile 60s linear infinite;
   }
 }
 
@@ -119,6 +150,70 @@
   }
   100% {
     left: -180rem;
+  }
+}
+
+@-webkit-keyframes wrapper_1_anim_mobile {
+  0% {
+    left: 0;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    left: -150rem;
+    opacity: 0;
+  }
+  51% {
+    opacity: 0;
+    left: 150rem;
+  }
+  52% {
+    opacity: 1;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes wrapper_1_anim_mobile {
+  0% {
+    left: 0;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    left: -150rem;
+    opacity: 0;
+  }
+  51% {
+    opacity: 0;
+    left: 150rem;
+  }
+  52% {
+    opacity: 1;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes wrapper_2_anim_mobile {
+  0% {
+    left: 150rem;
+  }
+  100% {
+    left: -150rem;
+  }
+}
+
+@keyframes wrapper_2_anim_mobile {
+  0% {
+    left: 150rem;
+  }
+  100% {
+    left: -150rem;
   }
 }
 /*# sourceMappingURL=featured_paintings.module.css.map */

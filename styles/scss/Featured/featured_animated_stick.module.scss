@@ -2,6 +2,7 @@
 @import '../responsive';
 
 @include desktop {
+ 
  .stick_container{
   position: relative;
   width: 100%;
@@ -11,12 +12,14 @@
 }
 
 @include tablet {
+
  .stick_container{
   height: 10rem;
  }
 }
 
 @include mobile {
+
  .stick_container{
   height: 8rem;
  }

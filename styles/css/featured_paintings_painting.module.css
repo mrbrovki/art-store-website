@@ -1,6 +1,6 @@
 @media (max-width: 10240px) {
   .painting_container {
-    height: 25rem;
+    height: 26rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -25,6 +25,26 @@
   .painting_container:hover {
     -webkit-box-shadow: 0 0 10px #00000021;
             box-shadow: 0 0 10px #00000021;
+  }
+}
+
+@media (max-width: 1024px) {
+  .painting_container {
+    height: 24rem;
+  }
+  .painting_container .image_container {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .painting_container {
+    height: 22rem;
+  }
+  .painting_container .image_container {
+    width: 18rem;
+    height: 18rem;
   }
 }
 /*# sourceMappingURL=featured_paintings_painting.module.css.map */

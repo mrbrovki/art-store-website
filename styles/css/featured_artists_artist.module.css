@@ -9,7 +9,7 @@
         grid-template-rows: 2rem 2rem;
     grid-gap: 0.5rem;
     width: 18rem;
-    margin: 1rem;
+    margin-top: 3rem;
   }
   .artist .image_container {
     position: relative;
@@ -31,7 +31,8 @@
 
 @media (max-width: 1024px) {
   .artist {
-    margin: 0;
+    border: none;
+    margin: 0.5rem;
   }
 }
 

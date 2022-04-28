@@ -4,7 +4,7 @@
 @include desktop {
 
   .painting_container{
-   height: 25rem;
+   height: 26rem;
    display: flex;
    flex-flow: column nowrap;
    justify-content: center;
@@ -22,11 +22,31 @@
    }
 
    &:hover{
-    box-shadow: 0 0 10px #00000021;
-   }
+      box-shadow: 0 0 10px #00000021;
+    }
   }
- }
+}
 
-@include tablet {}
+@include tablet {
 
-@include mobile {}
+  .painting_container{
+    height: 24rem;
+
+    .image_container {
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+}
+
+@include mobile {
+
+  .painting_container{
+    height: 22rem;
+
+    .image_container{
+      width: 18rem;
+      height: 18rem;
+    }
+  }
+}

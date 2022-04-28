@@ -2,14 +2,14 @@
   .artists_container {
     height: calc(100vh - 53rem);
     background-color: #F4F4F2;
-    padding: 3rem 8rem;
+    overflow-y: hidden;
   }
   .artists_container .artists_heading {
     text-transform: uppercase;
     color: #666666;
     font-size: 1.25rem;
     font-weight: 500;
-    margin: 0;
+    margin: 2rem 8rem;
   }
   .artists_container .artists {
     display: -webkit-box;
@@ -22,15 +22,14 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
 @media (max-width: 1024px) {
   .artists_container {
-    height: calc(100vh - 49rem);
+    height: calc(100vh - 46rem);
   }
   .artists_container .artists_heading {
     text-align: center;
@@ -45,7 +44,7 @@
 
 @media (max-width: 768px) {
   .artists_container {
-    height: calc(100vh - 40rem);
+    height: calc(100vh - 39rem);
   }
 }
 /*# sourceMappingURL=featured_artists.module.css.map */
