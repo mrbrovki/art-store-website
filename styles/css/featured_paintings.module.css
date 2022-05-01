@@ -1,6 +1,7 @@
 @media (max-width: 10240px) {
   .paintings_container {
     height: 31rem;
+    position: relative;
   }
   .paintings_container .heading {
     text-transform: capitalize;
@@ -10,6 +11,7 @@
     margin: 0 8rem;
   }
   .paintings_container .carousel {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -17,7 +19,6 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     height: 26rem;
-    overflow-x: hidden;
     width: 360rem;
   }
   .paintings_container .carousel .wrapper_1, .paintings_container .carousel .wrapper_2 {
@@ -61,7 +62,7 @@
 
 @media (max-width: 768px) {
   .paintings_container {
-    height: 25rem;
+    height: 20rem;
   }
   .paintings_container .heading {
     font-size: 2rem;
@@ -70,12 +71,12 @@
     text-align: center;
   }
   .paintings_container .carousel {
-    height: 22rem;
-    width: 300rem;
+    height: 17rem;
+    width: 240rem;
   }
   .paintings_container .carousel .wrapper_1,
   .paintings_container .carousel .wrapper_2 {
-    width: 150rem;
+    width: 120rem;
   }
   .paintings_container .carousel .wrapper_1 {
     left: 0;
@@ -83,7 +84,7 @@
             animation: wrapper_1_anim_mobile 60s linear infinite;
   }
   .paintings_container .carousel .wrapper_2 {
-    left: 150rem;
+    left: 240rem;
     -webkit-animation: wrapper_2_anim_mobile 60s linear infinite;
             animation: wrapper_2_anim_mobile 60s linear infinite;
   }
@@ -161,12 +162,12 @@
     opacity: 1;
   }
   50% {
-    left: -150rem;
+    left: -120rem;
     opacity: 0;
   }
   51% {
     opacity: 0;
-    left: 150rem;
+    left: 120rem;
   }
   52% {
     opacity: 1;
@@ -184,12 +185,12 @@
     opacity: 1;
   }
   50% {
-    left: -150rem;
+    left: -120rem;
     opacity: 0;
   }
   51% {
     opacity: 0;
-    left: 150rem;
+    left: 120rem;
   }
   52% {
     opacity: 1;
@@ -201,19 +202,19 @@
 
 @-webkit-keyframes wrapper_2_anim_mobile {
   0% {
-    left: 150rem;
+    left: 120rem;
   }
   100% {
-    left: -150rem;
+    left: -120rem;
   }
 }
 
 @keyframes wrapper_2_anim_mobile {
   0% {
-    left: 150rem;
+    left: 120rem;
   }
   100% {
-    left: -150rem;
+    left: -120rem;
   }
 }
 /*# sourceMappingURL=featured_paintings.module.css.map */

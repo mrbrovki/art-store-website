@@ -5,6 +5,7 @@
 
  .paintings_container{
   height: 31rem;
+  position: relative;
 
   .heading{
    text-transform: capitalize;
@@ -15,12 +16,12 @@
   }
 
   .carousel{
+   position: relative;
    display: flex;
    justify-content: space-between;
    height: 26rem;
-   overflow-x: hidden;
    width: 360rem;
-   
+
    .wrapper_1, .wrapper_2{
     display: flex;
     width: 180rem;
@@ -62,7 +63,7 @@
 @include mobile {
 
  .paintings_container{
-  height: 25rem;
+  height: 20rem;
   
   .heading{
    font-size: 2rem;
@@ -72,12 +73,12 @@
   }
 
   .carousel{
-   height: 22rem;
-   width: 300rem;
-  
+   height: 17rem;
+   width: 240rem;
+   
    .wrapper_1,
    .wrapper_2{
-    width: 150rem;
+    width: 120rem;
    }
 
    .wrapper_1 {
@@ -86,7 +87,7 @@
    }
   
    .wrapper_2 {
-    left: 150rem;
+    left: 240rem;
     animation: wrapper_2_anim_mobile 60s linear infinite;
    }
   }
@@ -141,13 +142,13 @@
  }
 
  50% {
-  left: -150rem;
+  left: -120rem;
   opacity: 0;
  }
 
  51% {
   opacity: 0;
-  left: 150rem;
+  left: 120rem;
  }
 
  52% {
@@ -161,10 +162,10 @@
 
 @keyframes wrapper_2_anim_mobile {
  0% {
-  left: 150rem;
+  left: 120rem;
  }
 
  100% {
-  left: -150rem;
+  left: -120rem;
  }
 }

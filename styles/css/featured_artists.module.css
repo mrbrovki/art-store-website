@@ -1,6 +1,6 @@
 @media (max-width: 10240px) {
   .artists_container {
-    height: calc(100vh - 53rem);
+    height: 30rem;
     background-color: #F4F4F2;
     overflow-y: hidden;
   }
@@ -29,7 +29,7 @@
 
 @media (max-width: 1024px) {
   .artists_container {
-    height: calc(100vh - 46rem);
+    height: 40rem;
   }
   .artists_container .artists_heading {
     text-align: center;
@@ -44,7 +44,7 @@
 
 @media (max-width: 768px) {
   .artists_container {
-    height: calc(100vh - 39rem);
+    min-height: 50rem;
   }
 }
 /*# sourceMappingURL=featured_artists.module.css.map */

@@ -40,11 +40,11 @@
 
 @media (max-width: 768px) {
   .painting_container {
-    height: 22rem;
+    height: 17rem;
   }
   .painting_container .image_container {
-    width: 18rem;
-    height: 18rem;
+    width: 15rem;
+    height: 15rem;
   }
 }
 /*# sourceMappingURL=featured_paintings_painting.module.css.map */

@@ -6,6 +6,7 @@
  .stick_container{
   position: relative;
   width: 100%;
+  margin-top: 6rem;
   height: 12rem;
   border-bottom: 1px solid black;
  }
@@ -15,12 +16,14 @@
 
  .stick_container{
   height: 10rem;
+  margin-top: 4rem;
  }
 }
 
 @include mobile {
 
  .stick_container{
+  margin-top: 2rem;
   height: 8rem;
  }
 }

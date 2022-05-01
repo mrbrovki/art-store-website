@@ -9,7 +9,7 @@ import styles from '../../styles/css/main.module.css';
 
 const Main:FC<{children: ReactNode}> = ({children}) => {
   return (
-    <main>
+    <main className={styles.main_container}>
       {children}
     </main>
   );
