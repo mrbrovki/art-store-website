@@ -55,10 +55,11 @@
  .nav_container {
   position: absolute;
   width: 100%;
+  z-index: 5;
   overflow-y: hidden;
   top: 6rem;
   left: 0;
-  background-color: $nav-mobile-bg-clr;
+  background-color: $clr-black;
   color: $clr-white;
   transition: transform 0.3s;
   padding: 0 2rem;

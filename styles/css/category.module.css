@@ -1,1 +1,34 @@
-/* No CSS *//*# sourceMappingURL=category.module.css.map */
+@media (max-width: 10240px) {
+  .category_container {
+    height: 50rem;
+  }
+  .category_container .in_dev {
+    text-align: center;
+    margin-top: 5rem;
+    line-height: 15rem;
+    animation: in-dev-anim 1s infinite alternate-reverse;
+  }
+}
+
+@-webkit-keyframes in-dev-anim {
+  0% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
+
+@keyframes in-dev-anim {
+  0% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
+/*# sourceMappingURL=category.module.css.map */

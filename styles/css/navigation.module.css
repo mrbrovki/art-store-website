@@ -49,10 +49,11 @@
   .nav_container {
     position: absolute;
     width: 100%;
+    z-index: 5;
     overflow-y: hidden;
     top: 6rem;
     left: 0;
-    background-color: #878787db;
+    background-color: #000;
     color: #fff;
     -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
