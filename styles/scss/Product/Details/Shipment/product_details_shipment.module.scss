@@ -1,2 +1,25 @@
 @import '../../../variables';
 @import '../../../breakpoints';
+
+@include max-xl{
+
+ .price{
+  font-size: 2rem;
+  margin: 1rem 0;
+  font-weight: 500;
+ }
+
+ .location,
+ .time{
+  display:  flex;
+  align-items: center;
+
+  .image_container{
+   width: 2rem;
+   height: 2rem;
+   position: relative;
+   display: inline-block;
+  }
+ }
+ 
+}

@@ -9,10 +9,10 @@ import ProductImage from './ProductImage';
 
 
 
-const View:FC<{data: PhotoProps}> = ({data}) => {
+const View:FC<{imageSrc: string}> = ({imageSrc}) => {
  return (
   <div className={styles.view_container}>
-   <ProductImage src={data.src.original} />
+   <ProductImage imageSrc={imageSrc} />
   </div>
  );
 };

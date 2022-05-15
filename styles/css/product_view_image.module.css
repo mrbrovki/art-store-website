@@ -1,8 +1,8 @@
 @media (max-width: 3000px) {
   .image_container {
     position: relative;
-    height: 50%;
-    width: 50%;
+    height: 70%;
+    width: 70%;
     -webkit-filter: drop-shadow(0 0 16px #0000003f);
             filter: drop-shadow(0 0 16px #0000003f);
   }

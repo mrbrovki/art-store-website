@@ -1,1 +1,24 @@
-/* No CSS *//*# sourceMappingURL=product_details_shipment.module.css.map */
+@media (max-width: 3000px) {
+  .price {
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-weight: 500;
+  }
+  .location,
+  .time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .location .image_container,
+  .time .image_container {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    display: inline-block;
+  }
+}
+/*# sourceMappingURL=product_details_shipment.module.css.map */

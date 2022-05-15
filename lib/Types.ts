@@ -43,5 +43,16 @@ export interface FeaturedArtist{
   first_name: string;
   last_name: string;
   city: string;
-  country: string
+  country: string;
 };
+
+export interface DetailsData<T>{
+  name: T;
+  author: T;
+  info: {
+    description:T;
+    physical_details:T;
+  };
+  price: number;
+
+} 

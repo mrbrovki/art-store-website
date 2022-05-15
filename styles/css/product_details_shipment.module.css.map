@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AEgEC,MAAM,EAAE,SAAS,EAAE,MAAM;EF3DzB,AAAA,MAAM,CAAA;IACL,SAAS,EAAE,IAAI;IACf,MAAM,EAAE,MAAM;IACd,WAAW,EAAE,GAAG;GAChB;EAED,AAAA,SAAS;EACT,KAAK,CAAA;IACJ,OAAO,EAAG,IAAI;IACd,WAAW,EAAE,MAAM;GAQnB;EAXD,AAKC,SALQ,CAKR,gBAAgB;EAJjB,KAAK,CAIJ,gBAAgB,CAAA;IACf,KAAK,EAAE,IAAI;IACX,MAAM,EAAE,IAAI;IACZ,QAAQ,EAAE,QAAQ;IAClB,OAAO,EAAE,YAAY;GACrB",
     "sources": [
         "../scss/Product/Details/Shipment/product_details_shipment.module.scss",
         "../scss/_variables.scss",
