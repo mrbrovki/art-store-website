@@ -4,8 +4,7 @@
     "sources": [
         "../scss/Featured/featured.module.scss",
         "../scss/_variables.scss",
-        "../scss/_responsive.scss",
-        "../scss/_variables.scss"
+        "../scss/_breakpoints.scss"
     ],
     "names": [],
     "file": "featured.module.css"

@@ -1,11 +1,10 @@
 {
     "version": 3,
-    "mappings": "AEGC,MAAM,EAAE,SAAS,EAAE,OAAO;EFEzB,AAAA,mBAAmB,CAAA;IAClB,MAAM,EAAE,KAAK;IACb,OAAO,EAAE,IAAI;IACb,SAAS,EAAE,aAAa;IACxB,eAAe,EAAE,MAAM;GAiBvB;EArBD,AAMC,mBANkB,CAMlB,gBAAgB,CAAA;IACf,QAAQ,EAAE,QAAQ;IAClB,KAAK,EAAE,KAAK;IACZ,MAAM,EAAE,KAAK;GACb;EAVF,AAYC,mBAZkB,CAYlB,cAAc;EAZf,mBAAmB,CAalB,YAAY,CAAA;IACX,MAAM,EAAE,CAAC;IACT,UAAU,EAAE,MAAM;GAClB;EAhBF,AAkBC,mBAlBkB,AAkBjB,MAAM,CAAA;IACJ,UAAU,EAAE,kBAAkB;GAC/B;;;AEhBJ,MAAM,EAAE,SAAS,EAAE,MAAM;EFsBxB,AAAA,mBAAmB,CAAA;IACjB,MAAM,EAAE,KAAK;GAMd;EAPD,AAGE,mBAHiB,CAGjB,gBAAgB,CAAC;IACf,KAAK,EAAE,KAAK;IACZ,MAAM,EAAE,KAAK;GACd;;;AEtBJ,MAAM,EAAE,SAAS,EAAE,KAAK;EF4BvB,AAAA,mBAAmB,CAAA;IACjB,MAAM,EAAE,KAAK;GAMd;EAPD,AAGE,mBAHiB,CAGjB,gBAAgB,CAAA;IACd,KAAK,EAAE,KAAK;IACZ,MAAM,EAAE,KAAK;GACd",
+    "mappings": "",
     "sources": [
         "../scss/Featured/Paintings/featured_paintings_painting.module.scss",
         "../scss/_variables.scss",
-        "../scss/_responsive.scss",
-        "../scss/_variables.scss"
+        "../scss/_breakpoints.scss"
     ],
     "names": [],
     "file": "featured_paintings_painting.module.css"

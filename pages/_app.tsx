@@ -1,4 +1,5 @@
 import React from 'react';
+
 //  types
 import { AppProps } from 'next/app';
 //  components

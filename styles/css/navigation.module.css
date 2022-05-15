@@ -1,78 +1,29 @@
-@media (max-width: 10240px) {
+@media (max-width: 3000px) {
   .hamburger {
     display: none;
   }
   .nav_container {
-    -ms-grid-column-align: end;
-        justify-self: end;
-    width: 24rem;
+    justify-self: flex-end;
   }
-  .nav_container ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .nav_container ul .list_container {
-    list-style-type: none;
-    margin-left: -2.5rem;
+  .nav_container .list_container .link {
+    display: inline-block;
+    list-style: none;
     text-transform: uppercase;
-    font-weight: 500;
     font-size: 1.25rem;
+    margin: 0 1rem;
   }
 }
 
 @media (max-width: 1024px) {
-  .nav_container {
-    width: 18rem;
-  }
-  .nav_container ul .list_container {
+  .nav_container .list_container .link {
     font-size: 1rem;
+    margin: 0.5rem;
   }
 }
 
 @media (max-width: 768px) {
-  .hamburger {
-    display: block;
-    -ms-grid-column-align: end;
-        justify-self: end;
-  }
-  .hamburger:hover {
-    cursor: pointer;
-  }
-  .nav_container {
-    position: absolute;
-    width: 100%;
-    z-index: 5;
-    overflow-y: hidden;
-    top: 6rem;
-    left: 0;
-    background-color: #000;
-    color: #fff;
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s;
-    padding: 0 2rem;
-  }
-  .nav_container ul .list_container {
-    font-size: 1rem;
-  }
-  .hidden {
-    max-height: 0rem;
-    -webkit-transform: rotateX(90deg);
-            transform: rotateX(90deg);
-  }
-  .shown {
-    max-height: 4rem;
-    -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg);
+  .nav_container .list_container .link {
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=navigation.module.css.map */

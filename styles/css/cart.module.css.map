@@ -1,11 +1,8 @@
 {
     "version": 3,
-    "mappings": "AEGC,MAAM,EAAE,SAAS,EAAE,OAAO;EFE1B,AAAA,eAAe,CAAA;IAEd,YAAY,EAAE,GAAG;GACjB",
+    "mappings": "",
     "sources": [
-        "../scss/Layout/Header/cart.module.scss",
-        "../scss/_variables.scss",
-        "../scss/_responsive.scss",
-        "../scss/_variables.scss"
+        "../scss/Layout/Header/Cart/cart.module.scss"
     ],
     "names": [],
     "file": "cart.module.css"

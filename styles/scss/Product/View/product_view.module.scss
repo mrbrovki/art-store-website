@@ -1,8 +1,43 @@
 @import '../../variables';
-@import '../../responsive';
+@import '../../breakpoints';
 
-@include desktop {}
+@include max-xl {
+ .view_container{
+  background-color: $product-view-bg;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: -10;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10rem;
+ }
+}
 
-@include tablet {}
+@include max-lg {
+ .view_container {
+  padding-top: 8rem;
+ }
+}
 
-@include mobile {}
+@include max-md {
+
+ .view_container {
+  padding-top: 6rem;
+ }
+}
+
+@include max-tablet {
+
+ .view_container {
+   padding-top: 5rem;
+  }
+}
+
+@include max-sm {
+ .view_container {
+  padding-top: 4rem;
+ }
+}

@@ -1,4 +1,4 @@
-export interface Photo {
+export interface PhotoProps {
   id: number;
   width: number;
   height: number;
@@ -20,7 +20,7 @@ export interface Photo {
   alt: string;
 };
 
-export type Media = (Photo & {type: "Photo"})[];
+export type Media = (PhotoProps & {type: "Photo"})[];
 export interface CollectionData{
     page: number;
     per_page: number;

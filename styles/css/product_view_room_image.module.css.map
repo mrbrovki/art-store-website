@@ -4,8 +4,7 @@
     "sources": [
         "../scss/Product/View/Room/product_view_room_image.module.scss",
         "../scss/_variables.scss",
-        "../scss/_responsive.scss",
-        "../scss/_variables.scss"
+        "../scss/_breakpoints.scss"
     ],
     "names": [],
     "file": "product_view_room_image.module.css"

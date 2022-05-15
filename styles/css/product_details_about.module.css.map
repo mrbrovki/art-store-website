@@ -4,8 +4,7 @@
     "sources": [
         "../scss/Product/Details/product_details_about.module.scss",
         "../scss/_variables.scss",
-        "../scss/_responsive.scss",
-        "../scss/_variables.scss"
+        "../scss/_breakpoints.scss"
     ],
     "names": [],
     "file": "product_details_about.module.css"

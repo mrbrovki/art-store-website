@@ -1,8 +1,35 @@
 @import '../../variables';
-@import '../../responsive';
+@import '../../breakpoints';
 
-@include desktop {}
+@include max-xl{
+ 
+ .btn_container{
+  border: none;
+  background-color: $clr-white;
+  padding: 0%;
+  width: 6rem;
+  position: relative;
+  
+  .back{
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   font-size: 1rem;
+   margin-left: 1.25rem;
+  }
 
-@include tablet {}
+  .arrow_container{
+   position: absolute;
+   transition: transform 0.3s
+  }
+  
 
-@include mobile {}
+  &:hover{
+   cursor: pointer;
+
+   .arrow_container {
+     transform: translateX(-0.5rem);
+   
+    }
+  }
+ }
+}

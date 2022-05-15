@@ -1,11 +1,10 @@
 {
     "version": 3,
-    "mappings": "AEGC,MAAM,EAAE,SAAS,EAAE,OAAO;EFC1B,AAAA,eAAe,CAAA;IACd,UAAU,EAAE,MAAM;IAClB,KAAK,EAAE,KAAK;GACZ",
+    "mappings": "",
     "sources": [
         "../scss/Layout/main.module.scss",
         "../scss/_variables.scss",
-        "../scss/_responsive.scss",
-        "../scss/_variables.scss"
+        "../scss/_breakpoints.scss"
     ],
     "names": [],
     "file": "main.module.css"

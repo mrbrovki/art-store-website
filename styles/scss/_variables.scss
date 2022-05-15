@@ -1,8 +1,3 @@
-//responsive
-$max-mobile-width: 768px;
-$max-tablet-width: 1024px;
-$max-desktop-width: 10240px;
-
 //colors
 $nav-mobile-bg-clr: #878787db;
 $clr-white: #fff;
@@ -12,3 +7,9 @@ $clr-artist-location:#878787db;
 $clr-text-grey: #666666;
 $clr-black: #000;
 $artists-bg-clr: #F4F4F2;
+
+//layout
+$header-bg-clr: $clr-white;
+// product
+$product-view-bg: $clr-grey;
+$image-shadow-clr: #0000003f;

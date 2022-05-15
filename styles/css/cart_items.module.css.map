@@ -1,11 +1,10 @@
 {
     "version": 3,
-    "mappings": "AEGC,MAAM,EAAE,SAAS,EAAE,OAAO;EFC1B,AAAA,qBAAqB,CAAA;IACpB,QAAQ,EAAE,QAAQ;IAClB,KAAK,EAAE,KAAK;IACZ,MAAM,EAAE,KAAK;IACb,KAAK,EAAE,IAAI;IACX,GAAG,EAAE,IAAI;IACT,gBAAgB,ECHN,IAAI;IDId,MAAM,EAAE,GAAG,CAAC,KAAK,CAAC,oBAAoB;IACtC,aAAa,EAAE,MAAM;GACrB",
+    "mappings": "",
     "sources": [
         "../scss/Layout/Header/Cart/cart_items.module.scss",
         "../scss/_variables.scss",
-        "../scss/_responsive.scss",
-        "../scss/_variables.scss"
+        "../scss/_breakpoints.scss"
     ],
     "names": [],
     "file": "cart_items.module.css"

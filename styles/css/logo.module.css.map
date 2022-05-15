@@ -4,8 +4,7 @@
     "sources": [
         "../scss/Layout/Header/logo.module.scss",
         "../scss/_variables.scss",
-        "../scss/_responsive.scss",
-        "../scss/_variables.scss"
+        "../scss/_breakpoints.scss"
     ],
     "names": [],
     "file": "logo.module.css"

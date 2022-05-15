@@ -1,4 +1,5 @@
 import React, {createContext, Dispatch, FC, ReactNode, useReducer} from 'react';
+import { createClient } from 'pexels';
 // types 
 import { State, Action, AppContextProps } from '../lib/Types';
 
@@ -9,7 +10,8 @@ interface ContextProps{
 const initState:State = {};
 export const Context = createContext<ContextProps>({state: initState, dispatch: () => {}});
 
-
+const pexelsKey = process.env.ENV_PEXELS_API_KEY as string;
+export const client = createClient(pexelsKey);
 
 const AppContext:FC<AppContextProps<ReactNode>> = ({children}) => {
  const reducer = <T extends State>(state: T, action: Action):T =>{

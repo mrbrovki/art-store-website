@@ -1,1 +1,30 @@
-/* No CSS *//*# sourceMappingURL=go_back_btn.module.css.map */
+@media (max-width: 3000px) {
+  .btn_container {
+    border: none;
+    background-color: #fff;
+    padding: 0%;
+    width: 6rem;
+    position: relative;
+  }
+  .btn_container .back {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1rem;
+    margin-left: 1.25rem;
+  }
+  .btn_container .arrow_container {
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+  }
+  .btn_container:hover {
+    cursor: pointer;
+  }
+  .btn_container:hover .arrow_container {
+    -webkit-transform: translateX(-0.5rem);
+            transform: translateX(-0.5rem);
+  }
+}
+/*# sourceMappingURL=go_back_btn.module.css.map */

@@ -20,10 +20,10 @@ const Navigation:FC = () => {
       <Image src='/assets/hamburger.svg' width={24} height={24} />
     </div>
     <nav className={styles.nav_container + ' ' + styles[navVisibility]}>
-      <ul>
+      <ul className={styles.list_container}>
         {categories.map(category => {
           return(
-            <li className={styles.list_container} key={category}>
+            <li className={styles.link} key={category}>
               <Link href={`/${category}`}>
                 <a>{category}</a>
               </Link>

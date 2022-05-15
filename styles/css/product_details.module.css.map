@@ -1,11 +1,10 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AEgEC,MAAM,EAAE,SAAS,EAAE,MAAM;EF5DzB,AAAA,kBAAkB,CAAA;IACjB,gBAAgB,ECHN,IAAI;IDId,QAAQ,EAAE,QAAQ;IAClB,KAAK,EAAE,GAAG;IACV,KAAK,EAAE,CAAC;IACR,GAAG,EAAE,CAAC;IACN,MAAM,EAAE,IAAI;IACZ,OAAO,EAAE,EAAE;IACX,OAAO,EAAE,OAAO;GAChB",
     "sources": [
         "../scss/Product/Details/product_details.module.scss",
         "../scss/_variables.scss",
-        "../scss/_responsive.scss",
-        "../scss/_variables.scss"
+        "../scss/_breakpoints.scss"
     ],
     "names": [],
     "file": "product_details.module.css"

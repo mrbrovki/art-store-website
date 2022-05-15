@@ -1,11 +1,10 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AEgEC,MAAM,EAAE,SAAS,EAAE,MAAM;EF5DzB,AAAA,eAAe,CAAA;IACd,gBAAgB,ECFP,OAAO;IDGhB,QAAQ,EAAE,QAAQ;IAClB,MAAM,EAAE,IAAI;IACZ,GAAG,EAAE,CAAC;IACN,OAAO,EAAE,GAAG;IACZ,KAAK,EAAE,GAAG;IACV,OAAO,EAAE,IAAI;IACb,WAAW,EAAE,MAAM;IACnB,eAAe,EAAE,MAAM;IACvB,WAAW,EAAE,KAAK;GAClB;;;AE2CD,MAAM,EAAE,SAAS,EAAE,MAAM;EFvCzB,AAAA,eAAe,CAAC;IACf,WAAW,EAAE,IAAI;GACjB;;;AE+BD,MAAM,EAAE,SAAS,EAAE,KAAK;EF1BxB,AAAA,eAAe,CAAC;IACf,WAAW,EAAE,IAAI;GACjB;;;AEkBD,MAAM,EAAE,SAAS,EAAE,KAAK;EFbxB,AAAA,eAAe,CAAC;IACd,WAAW,EAAE,IAAI;GACjB;;;AEKF,MAAM,EAAE,SAAS,EAAE,KAAK;EFDxB,AAAA,eAAe,CAAC;IACf,WAAW,EAAE,IAAI;GACjB",
     "sources": [
         "../scss/Product/View/product_view.module.scss",
         "../scss/_variables.scss",
-        "../scss/_responsive.scss",
-        "../scss/_variables.scss"
+        "../scss/_breakpoints.scss"
     ],
     "names": [],
     "file": "product_view.module.css"

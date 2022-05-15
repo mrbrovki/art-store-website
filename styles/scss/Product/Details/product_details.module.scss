@@ -1,8 +1,15 @@
 @import '../../variables';
-@import '../../responsive';
+@import '../../breakpoints';
 
-@include desktop {}
-
-@include tablet {}
-
-@include mobile {}
+@include max-xl{
+ .details_container{
+  background-color: $clr-white;
+  position: absolute;
+  width: 50%;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: -9;
+  padding: 10rem 0;
+ }
+}

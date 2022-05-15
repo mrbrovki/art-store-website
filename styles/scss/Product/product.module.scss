@@ -1,30 +1,8 @@
 @import '../variables';
-@import '../responsive';
+@import '../breakpoints';
 
-@include desktop {
-
-  .product_container {
-   height: 50rem;
+@include max-xl{
+ .product_container{
   
-   .in_dev {
-    text-align: center;
-    margin-top: 5rem;
-    line-height: 15rem;
-    animation: in-dev-anim 1s infinite alternate-reverse;
-   }
-  }
-}
-
-@include tablet {}
-
-@include mobile {}
-
-@keyframes in-dev-anim {
- 0% {
-  transform: scale(1.5);
- }
-
- 100% {
-  transform: scale(2);
  }
 }

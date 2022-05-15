@@ -1,1 +1,13 @@
-/* No CSS *//*# sourceMappingURL=product_details.module.css.map */
+@media (max-width: 3000px) {
+  .details_container {
+    background-color: #fff;
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: -9;
+    padding: 10rem 0;
+  }
+}
+/*# sourceMappingURL=product_details.module.css.map */

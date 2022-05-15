@@ -1,59 +1,59 @@
 @import '../../variables';
-@import '../../responsive';
+@import '../../breakpoints';
 
-@include desktop {
+// @include desktop {
 
- .artist{
-  border: 1px solid $clr-artist-border;
-  display: grid;
-  grid-template-columns: 4.5rem 1fr;
-  grid-template-rows: 2rem 2rem;
-  grid-gap: 0.5rem;
-  width: 18rem;
-  margin-top: 3rem;
-  .image_container{
-   position: relative;
-   grid-row: 1 / 3;
-   height: 4.5rem;
-   width: 4.5rem;
-  }
+//  .artist{
+//   border: 1px solid $clr-artist-border;
+//   display: grid;
+//   grid-template-columns: 4.5rem 1fr;
+//   grid-template-rows: 2rem 2rem;
+//   grid-gap: 0.5rem;
+//   width: 18rem;
+//   margin-top: 3rem;
+//   .image_container{
+//    position: relative;
+//    grid-row: 1 / 3;
+//    height: 4.5rem;
+//    width: 4.5rem;
+//   }
 
-  #{&}_name{
-   font-weight: 500;
-  }
+//   #{&}_name{
+//    font-weight: 500;
+//   }
 
-  #{&}_location{
-   align-self: flex-end;
-   color: $clr-text-grey;
-  }
- }
-}
+//   #{&}_location{
+//    align-self: flex-end;
+//    color: $clr-text-grey;
+//   }
+//  }
+// }
 
-@include tablet {
+// @include tablet {
 
- .artist{
-  border: none;
-  margin: 0.5rem;
- }
-}
+//  .artist{
+//   border: none;
+//   margin: 0.5rem;
+//  }
+// }
 
-@include mobile {
+// @include mobile {
 
- .artist{
-  border: none;
+//  .artist{
+//   border: none;
 
-  .image_container{
-   width: 4rem;
-   height: 4rem;
-  }
+//   .image_container{
+//    width: 4rem;
+//    height: 4rem;
+//   }
 
-  #{&}_name {
-   font-weight: 500;
-  }
+//   #{&}_name {
+//    font-weight: 500;
+//   }
   
-  #{&}_location {
-   align-self: flex-end;
-   color: $clr-text-grey;
-  }
- }
-}
+//   #{&}_location {
+//    align-self: flex-end;
+//    color: $clr-text-grey;
+//   }
+//  }
+// }

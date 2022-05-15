@@ -1,1 +1,10 @@
-/* No CSS *//*# sourceMappingURL=product_view_image.module.css.map */
+@media (max-width: 3000px) {
+  .image_container {
+    position: relative;
+    height: 50%;
+    width: 50%;
+    -webkit-filter: drop-shadow(0 0 16px #0000003f);
+            filter: drop-shadow(0 0 16px #0000003f);
+  }
+}
+/*# sourceMappingURL=product_view_image.module.css.map */

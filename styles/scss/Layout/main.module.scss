@@ -1,13 +1,13 @@
 @import '../variables';
-@import '../responsive';
+@import '../breakpoints';
 
-@include desktop {
- .main_container{
-  overflow-x: hidden;
-  width: 100vw;
- }
-}
+// @include desktop {
+//  .main_container{
+//   overflow-x: hidden;
+//   width: 100vw;
+//  }
+// }
 
-@include tablet {}
+// @include tablet {}
 
-@include mobile {}
+// @include mobile {}

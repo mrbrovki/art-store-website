@@ -1,52 +1,52 @@
 @import '../../variables';
-@import '../../responsive';
+@import '../../breakpoints';
 
-@include desktop {
+// @include desktop {
 
-  .painting_container{
-   height: 26rem;
-   display: flex;
-   flex-flow: column nowrap;
-   justify-content: center;
+//   .painting_container{
+//    height: 26rem;
+//    display: flex;
+//    flex-flow: column nowrap;
+//    justify-content: center;
 
-   .image_container{
-    position: relative;
-    width: 22rem;
-    height: 22rem;
-   }
+//    .image_container{
+//     position: relative;
+//     width: 22rem;
+//     height: 22rem;
+//    }
 
-   .painting_name,
-   .artist_name{
-    margin: 0;
-    text-align: center;
-   }
+//    .painting_name,
+//    .artist_name{
+//     margin: 0;
+//     text-align: center;
+//    }
 
-   &:hover{
-      box-shadow: 0 0 10px #00000021;
-    }
-  }
-}
+//    &:hover{
+//       box-shadow: 0 0 10px #00000021;
+//     }
+//   }
+// }
 
-@include tablet {
+// @include tablet {
 
-  .painting_container{
-    height: 24rem;
+//   .painting_container{
+//     height: 24rem;
 
-    .image_container {
-      width: 20rem;
-      height: 20rem;
-    }
-  }
-}
+//     .image_container {
+//       width: 20rem;
+//       height: 20rem;
+//     }
+//   }
+// }
 
-@include mobile {
+// @include mobile {
 
-  .painting_container{
-    height: 17rem;
+//   .painting_container{
+//     height: 17rem;
 
-    .image_container{
-      width: 15rem;
-      height: 15rem;
-    }
-  }
-}
+//     .image_container{
+//       width: 15rem;
+//       height: 15rem;
+//     }
+//   }
+// }

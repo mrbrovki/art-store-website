@@ -4,8 +4,7 @@
     "sources": [
         "../scss/Product/Details/Shipment/add_to_cart.module.scss",
         "../scss/_variables.scss",
-        "../scss/_responsive.scss",
-        "../scss/_variables.scss"
+        "../scss/_breakpoints.scss"
     ],
     "names": [],
     "file": "add_to_cart.module.css"

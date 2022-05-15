@@ -1,11 +1,10 @@
 {
     "version": 3,
-    "mappings": "AEGC,MAAM,EAAE,SAAS,EAAE,OAAO;EFE1B,AAAA,gBAAgB,CAAA;IACf,QAAQ,EAAE,QAAQ;IAClB,KAAK,EAAE,IAAI;IACX,UAAU,EAAE,IAAI;IAChB,MAAM,EAAE,KAAK;IACb,aAAa,EAAE,eAAe;GAC9B;;;AEFD,MAAM,EAAE,SAAS,EAAE,MAAM;EFOzB,AAAA,gBAAgB,CAAA;IACf,MAAM,EAAE,KAAK;IACb,UAAU,EAAE,IAAI;GAChB;;;AEJD,MAAM,EAAE,SAAS,EAAE,KAAK;EFSxB,AAAA,gBAAgB,CAAA;IACf,UAAU,EAAE,IAAI;IAChB,MAAM,EAAE,IAAI;GACZ",
+    "mappings": "",
     "sources": [
         "../scss/Featured/featured_animated_stick.module.scss",
         "../scss/_variables.scss",
-        "../scss/_responsive.scss",
-        "../scss/_variables.scss"
+        "../scss/_breakpoints.scss"
     ],
     "names": [],
     "file": "featured_animated_stick.module.css"

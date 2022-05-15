@@ -1,8 +1,13 @@
 @import '../../variables';
-@import '../../responsive';
+@import '../../breakpoints';
 
-@include desktop {}
+@include max-xl{
+ .image_container{
+  position: relative;
+  height: 50%;
+  width: 50%;
+  filter: drop-shadow(0 0 16px $image-shadow-clr);
+  }
+}
 
-@include tablet {}
 
-@include mobile {}
