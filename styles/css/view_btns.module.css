@@ -1,0 +1,19 @@
+@media (max-width: 3000px) {
+  .container {
+    border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #0000;
+  }
+  .container span {
+    font-size: 1rem;
+  }
+  .container:hover {
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=view_btns.module.css.map */

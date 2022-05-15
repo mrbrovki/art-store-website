@@ -39,4 +39,10 @@
     height: 4rem;
   }
 }
+
+@media (max-height: 768px) {
+  .header_container {
+    height: 4rem;
+  }
+}
 /*# sourceMappingURL=header.module.css.map */

@@ -8,11 +8,14 @@ import {PhotoProps} from '../../lib/Types';
 import styles from '../../styles/css/product.module.css';
 import Product from '../../components/Product';
 import { client } from '../../context';
-import { Photo } from 'pexels';
+import { ParsedUrlQuery } from 'querystring';
 
 export const getServerSideProps:GetServerSideProps = async (context) => {
-  const {id}= context.query;
-  const photo = await client.photos.show({id}) as PhotoProps;
+  const {id}:ParsedUrlQuery = context.query;
+  if(!id) return{
+    props: {}
+  };
+  const photo = await client.photos.show({id: id.toString()});
   return{
     props: {photo}
   };
@@ -20,7 +23,6 @@ export const getServerSideProps:GetServerSideProps = async (context) => {
 
 
 const ProductPage:NextPage<{photo: PhotoProps}> = ({photo}) => {
-  console.log(photo)
   return (
     <>
       <Product data={photo}/>

@@ -2,6 +2,7 @@
 @import '../../breakpoints';
 
 @include max-xl {
+
  .view_container{
   background-color: $product-view-bg;
   position: absolute;
@@ -10,13 +11,22 @@
   z-index: -10;
   width: 50%;
   display: flex;
+  flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
   padding-top: 10rem;
- }
+
+    .btns{
+      display: flex;
+      width: 15rem;
+      justify-content: space-between;
+      margin-top: 2rem;
+    }
+  }
 }
 
 @include max-lg {
+
  .view_container {
   padding-top: 8rem;
  }
@@ -26,9 +36,17 @@
 
  .view_container {
   padding-top: 6rem;
+  width: 100%;
  }
 }
 
+@include max-h{
+  
+  .view_container {
+      padding-top: 6rem;
+      width: 100%;
+    }
+}
 @include max-tablet {
 
  .view_container {
@@ -37,6 +55,7 @@
 }
 
 @include max-sm {
+
  .view_container {
   padding-top: 4rem;
  }

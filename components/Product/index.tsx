@@ -11,7 +11,7 @@ import View from './View';
 
 
 const Product:FC<{data: PhotoProps}> = ({data}) => {
- const viewData = data.src.landscape;
+ const viewData = data.src.original;
  const detailsData = {
   name: 'Wallowing Breeze',
   author: data.photographer,

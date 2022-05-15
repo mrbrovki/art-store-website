@@ -39,3 +39,10 @@
   height: 4rem;
  }
 }
+
+@include max-h{
+
+ .header_container{
+  height: 4rem;
+ }
+}

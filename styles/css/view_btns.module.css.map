@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AEgEC,MAAM,EAAE,SAAS,EAAE,MAAM;EF3DzB,AAAA,UAAU,CAAC;IACV,MAAM,EAAE,IAAI;IACZ,OAAO,EAAE,IAAI;IACb,WAAW,EAAE,MAAM;IACnB,gBAAgB,EAAE,KAAK;GASvB;EAbD,AAMC,UANS,CAMT,IAAI,CAAC;IACJ,SAAS,EAAE,IAAI;GACf;EARF,AAUC,UAVS,AAUR,MAAM,CAAC;IACP,MAAM,EAAE,OAAO;GACf",
+    "sources": [
+        "../scss/Product/View/view_btns.module.scss",
+        "../scss/_variables.scss",
+        "../scss/_breakpoints.scss"
+    ],
+    "names": [],
+    "file": "view_btns.module.css"
+}

@@ -11,7 +11,7 @@
   top: 0;
   height: 100%;
   z-index: -9;
-  padding: 10rem 10rem 10rem 6rem;
+  padding: 10rem 10rem 0 6rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
@@ -23,27 +23,39 @@
 @include max-lg{
 
  .details_container{
-  padding: 8rem 4rem;
+  padding: 8rem 4rem 0 4rem;
  }
 }
 
 @include max-md{
 
  .details_container{
-  padding: 6rem 3rem;
+  padding: 3rem 3rem;
+  justify-content: flex-start;
+  width: 100%;
+  top: 100%;
  }
+}
+
+@include max-h{
+ .details_container {
+   padding: 3rem 3rem;
+   justify-content: flex-start;
+   width: 100%;
+   top: 100%;
+  }
 }
 
 @include max-tablet{
 
  .details_container{
-  padding: 5rem 2rem;
+  padding: 3rem 2rem;
  }
 }
 
 @include max-sm{
 
  .details_container{
-  padding: 4rem 1rem;
+  padding: 3rem 1rem;
  }
 }

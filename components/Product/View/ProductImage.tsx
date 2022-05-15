@@ -10,7 +10,7 @@ import Image from 'next/image';
 const ProductImage:FC<{imageSrc: string}> = ({imageSrc}) => {
  return (
   <div className={styles.image_container}>
-   <Image src={imageSrc} layout='fill' objectFit='contain' objectPosition='center' />
+   <Image src={imageSrc} layout='fill' objectFit='contain' objectPosition='center' priority={true}/>
   </div>
  );
 };
