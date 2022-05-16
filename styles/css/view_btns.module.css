@@ -8,6 +8,7 @@
         -ms-flex-align: center;
             align-items: center;
     background-color: #0000;
+    color: #666666;
   }
   .container span {
     font-size: 1rem;

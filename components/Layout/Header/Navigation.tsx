@@ -16,22 +16,22 @@ const Navigation:FC = () => {
   const toggleNav = () => setNavVisibility(prev => prev === 'hidden' ? 'shown' : 'hidden');
   return (
     <>
-    <div className={styles.hamburger} onClick={toggleNav}>
-      <Image src='/assets/hamburger.svg' width={24} height={24} />
-    </div>
-    <nav className={styles.nav_container + ' ' + styles[navVisibility]}>
-      <ul className={styles.list_container}>
-        {categories.map(category => {
-          return(
-            <li className={styles.link} key={category}>
-              <Link href={`/${category}`}>
-                <a>{category}</a>
-              </Link>
-            </li>
-          )
-        })}
-      </ul>
-    </nav>
+      <div className={styles.hamburger} onClick={toggleNav}>
+        <Image src='/assets/hamburger.svg' width={24} height={24} />
+      </div>
+      <nav className={styles.nav_container + ' ' + styles[navVisibility]}>
+        <ul className={styles.list_container}>
+          {categories.map(category => {
+            return(
+              <li className={styles.link} key={category}>
+                <Link href={`/${category}`}>
+                  <a>{category}</a>
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
+      </nav>
     </>
   );
 };

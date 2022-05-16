@@ -3,8 +3,8 @@
     border: none;
     background-color: #fff;
     padding: 0%;
-    width: 6rem;
     position: relative;
+    color: #000;
   }
   .btn_container .back {
     text-transform: uppercase;

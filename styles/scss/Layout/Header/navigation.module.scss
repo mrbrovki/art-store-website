@@ -39,17 +39,61 @@
 
 @include max-md {
 
- .nav_container {
- 
-   .list_container {
- 
-    .link {
-     font-size: 0.8rem;
+  .hamburger{
+    display: block;
+    justify-self: end;
+
+    &:hover{
+      cursor: pointer;
     }
-   }
   }
+
+  .nav_container {
+    position: absolute;
+    bottom: -4rem;
+    left: 0;
+    height: 4rem;
+    background-color: $clr-black;
+    color: $clr-white;
+    width: 100%;
+    z-index: 10;
+    overflow-y: hidden;
+    transition: transform 0.3s;
+
+    .list_container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0;
+
+      .link {
+      font-size: 1.2rem;
+      }
+    }
+  }
+
+    .hidden {
+      max-height: 0rem;
+      transform: rotateX(90deg);
+    }
+  
+    .shown {
+      max-height: 4rem;
+      transform: rotateX(0deg);
+    }
 }
 
 @include max-tablet {}
 
-@include max-sm {}
+@include max-sm {
+
+  .nav_container{
+
+    .list_container
+
+    .link{
+      font-size: 0.8rem;
+    }
+  }
+}
+

@@ -4,32 +4,30 @@
 @include max-xl{
  
  .btn_container{
-  border: none;
-  background-color: $clr-white;
-  padding: 0%;
-  width: 6rem;
-  position: relative;
+    border: none;
+    background-color: $clr-white;
+    padding: 0%;
+    position: relative;
+    color: $clr-black;
+
+   .back{
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-size: 0.8rem;
+      margin-left: 1.25rem;
+    }
+
+   .arrow_container{
+      position: absolute;
+      transition: transform 0.3s
+    }
   
-  .back{
-   text-transform: uppercase;
-   letter-spacing: 5px;
-   font-size: 0.8rem;
-   margin-left: 1.25rem;
-  }
+    &:hover{
+      cursor: pointer;
 
-  .arrow_container{
-   position: absolute;
-   transition: transform 0.3s
-  }
-  
-
-  &:hover{
-   cursor: pointer;
-
-   .arrow_container {
-     transform: translateX(-0.5rem);
-   
+      .arrow_container {
+        transform: translateX(-0.5rem);
+      }
     }
   }
- }
 }
