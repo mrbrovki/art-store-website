@@ -1,4 +1,5 @@
-import React, {FC} from 'react';
+import React, {FC, useContext} from 'react';
+import { Context } from '../../../context';
 import { DetailsData } from '../../../lib/Types';
 // types
 // components
@@ -12,8 +13,9 @@ import Shipment from './Shipment';
 
 
 const Details:FC<{details: DetailsData<string>}> = ({details}) => {
+  const {state: {room}} = useContext(Context);
  return (
-  <div className={styles.details_container}>
+  <div className={styles.details_container + ' ' + styles[room]}>
     <GoBackButton />
     <About details={details}/>
     <Shipment price={details.price}/>

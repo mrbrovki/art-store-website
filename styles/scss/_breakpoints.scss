@@ -72,3 +72,9 @@ $breakpoints: (
   @content;
 }
 }
+
+@mixin room-max-h {
+  @media (max-height: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}

@@ -29,9 +29,11 @@ export interface CollectionData{
 };
 
 
-export interface State{};
+export interface State{
+  room: 'visible' | 'hidden';
+};
 export type Action = 
-| {type: unknown; payload: unknown}
+| {type: 'ROOM', payload: 'visible' | 'hidden'}
 
 export interface AppContextProps<T>{
  children:T;
@@ -54,5 +56,4 @@ export interface DetailsData<T>{
     physical_details:T;
   };
   price: number;
-
 } 

@@ -1,0 +1,24 @@
+@media (max-width: 3000px) {
+  .btn {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    background: #fff;
+    z-index: 30;
+    top: 0;
+    left: 0;
+  }
+  .btn:hover {
+    cursor: pointer;
+  }
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=go_back.module.css.map */

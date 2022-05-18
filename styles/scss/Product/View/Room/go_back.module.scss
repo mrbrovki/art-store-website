@@ -1,0 +1,28 @@
+@import '../../../variables';
+@import '../../../breakpoints';
+
+@include max-xl{
+
+ .btn{
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background: $clr-white;
+  z-index: 30;
+  top: 0;
+  left: 0;
+
+  &:hover{
+   cursor: pointer;
+  }
+ }
+}
+
+.visible{
+ display: block;
+}
+
+.hidden{
+ display: none;
+}

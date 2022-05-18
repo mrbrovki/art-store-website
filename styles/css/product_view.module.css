@@ -20,6 +20,10 @@
         -ms-flex-pack: center;
             justify-content: center;
     padding-top: 10rem;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
   }
   .view_container .btns {
     display: -webkit-box;
@@ -63,5 +67,15 @@
   .view_container {
     padding-top: 4rem;
   }
+}
+
+.hidden {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.visible {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 /*# sourceMappingURL=product_view.module.css.map */

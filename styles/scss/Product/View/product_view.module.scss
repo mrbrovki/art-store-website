@@ -15,7 +15,8 @@
   align-items: center;
   justify-content: center;
   padding-top: 10rem;
-
+  transition: transform 1s;
+  
     .btns{
       display: flex;
       width: 15rem;
@@ -60,4 +61,13 @@
  .view_container {
   padding-top: 4rem;
  }
+}
+
+
+.hidden{
+  transform: translateX(0);
+}
+
+.visible{
+  transform: translateX(-100%);
 }

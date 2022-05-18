@@ -7,9 +7,9 @@
   background-color: $clr-white;
   position: absolute;
   width: 50%;
-  right: 0;
   top: 0;
   height: 100%;
+  right: 0;
   z-index: -9;
   padding: 10rem 10rem 0 6rem;
   display: flex;
@@ -30,33 +30,50 @@
 @include max-md{
 
  .details_container{
-  padding: 3rem 3rem;
   justify-content: flex-start;
   width: 100%;
   top: 100%;
+ }
+
+ .visible{
+  display: none;
  }
 }
 
 @include max-h{
   
  .details_container {
-   padding: 3rem 3rem;
    justify-content: flex-start;
    width: 100%;
    top: 100%;
+   padding: 3rem 6rem;
+  }
+
+  .visible {
+    display: none;
   }
 }
 
 @include max-tablet{
 
  .details_container{
-  padding: 3rem 2rem;
+  padding: 8rem 2rem;
  }
 }
 
 @include max-sm{
 
  .details_container{
-  padding: 3rem 1rem;
+  padding: 7rem 1rem;
  }
+}
+
+@include md{
+  .hidden {
+      transform: translateX(0);
+    }
+  
+  .visible {
+    transform: translateX(100%);
+  }
 }

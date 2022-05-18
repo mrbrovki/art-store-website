@@ -14,38 +14,56 @@
   align-items: center;
   padding: 0 8rem;
   background-color: $header-bg-clr;
+  transition: top 1s;
  }
 }
 
 @include max-lg{
+
  .header_container{
   height: 8rem;
   padding: 0 5rem;
  }
 }
 
+@include max-h {
+
+ .header_container {
+  height: 4rem;
+  padding: 0 6rem;
+  box-shadow: 0 0 5px #00000032;
+ }
+}
+
 @include max-md{
+
  .header_container{
-  padding: 0 3rem;
+  padding: 0 4rem;
+  box-shadow: 0 0 5px #00000032;
   height: 6rem;
  }
 }
 
 @include max-tablet{
+
  .header_container{
   height: 5rem;
+  padding: 0 2rem;
  }
 }
 
 @include max-sm{
+
  .header_container{
   height: 4rem;
+  padding: 0 1rem;
  }
 }
 
-@include max-h{
+.visible{
+ top: -10rem;
+}
 
- .header_container{
-  height: 4rem;
- }
+.hidden{
+ top: 0;
 }

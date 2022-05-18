@@ -5,10 +5,9 @@ import {PhotoProps} from '../../lib/Types';
 // components
 // context
 // styles
-import styles from '../../styles/css/product.module.css';
 import Product from '../../components/Product';
-import { client } from '../../context';
 import { ParsedUrlQuery } from 'querystring';
+import { client } from '../../context';
 
 export const getServerSideProps:GetServerSideProps = async (context) => {
   const {id}:ParsedUrlQuery = context.query;
@@ -25,7 +24,7 @@ export const getServerSideProps:GetServerSideProps = async (context) => {
 const ProductPage:NextPage<{photo: PhotoProps}> = ({photo}) => {
   return (
     <>
-      <Product data={photo}/>
+      <Product photo={photo}/>
     </>
   );
 };
