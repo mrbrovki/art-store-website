@@ -1,7 +1,7 @@
 import React, {FC, useCallback, useEffect, useState, useRef} from 'react';
 import { Photo, PhotosWithTotalResults } from 'pexels';
 // types
-import { Categories, PhotoProps, SearchQuery } from '../../../lib/Types';
+import { Categories, SearchQuery } from '../../../lib/Types';
 // components
 import Product from './Product';
 // constants

@@ -4,7 +4,6 @@ import { useRouter } from 'next/router';
 // types
 import { CategoryProduct } from '../../../lib/Types';
 // components
-// context
 // styles
 import styles from '../../../styles/css/category_products_product.module.css';
 
