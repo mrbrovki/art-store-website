@@ -4,7 +4,7 @@ import Image from 'next/image';
 //  types
 //  components
 //  const
-import { categories } from '../../../lib/categories';
+import { categories } from '../../../lib/utils';
 //  context
 //  styles
 import styles from '../../../styles/css/navigation.module.css';

@@ -57,3 +57,20 @@ export interface DetailsData<T>{
   };
   price: number;
 } 
+
+export type Categories = 'paintings' | 'drawings' | 'sculpture';
+export type SearchQuery = 'abstract' | 'illustration' | 'sculpture' | '';
+
+export interface PaginationObject{
+  next_page: string;
+  page: number;
+  per_page: number;
+  photos: PhotoProps[];
+};
+
+export interface CategoryProduct{
+  imageSrc: string;
+  name: string;
+  author: string;
+  id: number
+}

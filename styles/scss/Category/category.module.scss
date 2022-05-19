@@ -1,28 +1,23 @@
 @import '../variables';
 @import '../breakpoints';
 
-// @include desktop {
-//  .category_container{
-//   height: 50rem;
+@include max-xl{
 
-//   .in_dev{
-//    text-align: center;
-//    margin-top: 5rem;
-//    line-height: 15rem;
-//    animation: in-dev-anim 1s infinite alternate-reverse;
-//   }
-//  }
-// }
+ .category_container{
+  padding: 10rem 8rem 0;
+ }
+}
 
-// @include tablet {}
+@include max-tablet{
 
-// @include mobile {}
+ .category_container{
+  padding: 10rem 2rem 0;
+ }
+}
 
-// @keyframes in-dev-anim {
-//  0%{
-//   transform: scale(1.5);
-//  }
-//  100%{
-//   transform: scale(2);
-//  }
-// }
+@include max-sm{
+
+ .category_container{
+  padding: 10rem 1rem;
+ }
+}

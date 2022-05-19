@@ -4,7 +4,6 @@ import { PhotoProps } from '../../lib/Types';
 // components
 // context
 // styles
-import styles from '../../styles/css/product.module.css';
 import Details from './Details';
 import View from './View';
 import Room from './Room';
@@ -24,11 +23,11 @@ const Product:FC<{photo: PhotoProps}> = ({photo}) => {
  }; 
 
  return (
-  <div className={styles.product_container}>
+  <>
    <View imageSrc={viewData}/>
    <Details details={detailsData}/>
    <Room imageSrc={viewData}/>
-  </div>
+  </>
  );
 };
  

@@ -1,15 +1,16 @@
 import React, {FC} from 'react';
-// types
 // components
-// context
+import { Categories } from '../../lib/Types';
 // styles
 import styles from '../../styles/css/category_name.module.css';
 
 
 
-const Name:FC = () => {
+const Name:FC<{categoryName: Categories}> = ({categoryName: name}) => {
  return (
-  <></>
+  <h1 className={styles.name}>
+   {name}
+  </h1>
  );
 };
  

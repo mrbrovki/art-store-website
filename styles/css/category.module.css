@@ -1,1 +1,18 @@
-/* No CSS *//*# sourceMappingURL=category.module.css.map */
+@media (max-width: 3000px) {
+  .category_container {
+    padding: 10rem 8rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .category_container {
+    padding: 10rem 2rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .category_container {
+    padding: 10rem 1rem;
+  }
+}
+/*# sourceMappingURL=category.module.css.map */

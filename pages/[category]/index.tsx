@@ -1,17 +1,35 @@
 import React from 'react';
 //  types
-import { NextPage } from 'next';
+import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
+import { Categories } from '../../lib/Types';
+import { ParsedUrlQuery } from 'querystring';
 // components
-// context
-// styles
-import styles from '../../styles/css/category.module.css';
+import Category from '../../components/Category';
+//utils
+import { categories } from '../../lib/utils';
 
 
-const CategoryPage:NextPage = () => {
+export const getStaticPaths:GetStaticPaths = () => {
+ const paths = categories.map(category => {
+  return {params: {category: category}}
+ });
+
+ return {
+  paths,
+  fallback: false
+ };
+};
+
+export const getStaticProps:GetStaticProps = (context) => {
+  const {category} = context.params as ParsedUrlQuery;
+  return {
+    props:{category}
+  };
+};
+
+const CategoryPage:NextPage<{category: Categories}> = ({category}) => {
   return (
-    <div className={styles.category_container}>
-      <p className={styles.in_dev}>in development</p>
-    </div>
+    <Category category={category}/>
   );
 };
 

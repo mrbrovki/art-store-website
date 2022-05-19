@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AEgEC,MAAM,EAAE,SAAS,EAAE,MAAM;EF3DzB,AAAA,mBAAmB,CAAA;IAClB,OAAO,EAAE,YAAY;GACrB;;;AEuCD,MAAM,EAAE,SAAS,EAAE,KAAK;EFlCxB,AAAA,mBAAmB,CAAA;IAClB,OAAO,EAAE,YAAY;GACrB;;;AE0BD,MAAM,EAAE,SAAS,EAAE,KAAK;EFrBxB,AAAA,mBAAmB,CAAA;IAClB,OAAO,EAAE,UAAU;GACnB",
     "sources": [
         "../scss/Category/category.module.scss",
         "../scss/_variables.scss",

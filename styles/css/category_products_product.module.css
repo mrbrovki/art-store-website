@@ -1,1 +1,21 @@
-/* No CSS *//*# sourceMappingURL=category_products_product.module.css.map */
+@media (max-width: 3000px) {
+  .product_container .image_container {
+    position: relative;
+    width: 100%;
+    height: 15rem;
+    -webkit-filter: drop-shadow(0 0 10px #00000040);
+            filter: drop-shadow(0 0 10px #00000040);
+  }
+  .product_container .details .name {
+    display: block;
+  }
+  .product_container .details .author {
+    display: block;
+  }
+  .product_container:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.096);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.096);
+  }
+}
+/*# sourceMappingURL=category_products_product.module.css.map */
