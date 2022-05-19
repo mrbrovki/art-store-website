@@ -14,7 +14,7 @@ const Product:FC<CategoryProduct> = ({imageSrc, name, author, id}) => {
   return (
    <div className={styles.product_container} onClick={() => router.push(`/$  {router.query.category}/${id}`)}>
      <div className={styles.image_container}>
-      <Image src={imageSrc} layout='fill' objectFit='cover'  objectPosition='center' quality={50}/>
+      <Image src={imageSrc} layout='fill' objectFit='cover'  objectPosition='center' quality={30}/>
      </div>
      <div className={styles.details}>
       <p className={styles.name}>{name}</p>
