@@ -1,59 +1,60 @@
 @import '../../variables';
 @import '../../breakpoints';
 
-// @include desktop {
+@include max-xl {
 
-//  .artist{
-//   border: 1px solid $clr-artist-border;
-//   display: grid;
-//   grid-template-columns: 4.5rem 1fr;
-//   grid-template-rows: 2rem 2rem;
-//   grid-gap: 0.5rem;
-//   width: 18rem;
-//   margin-top: 3rem;
-//   .image_container{
-//    position: relative;
-//    grid-row: 1 / 3;
-//    height: 4.5rem;
-//    width: 4.5rem;
-//   }
-
-//   #{&}_name{
-//    font-weight: 500;
-//   }
-
-//   #{&}_location{
-//    align-self: flex-end;
-//    color: $clr-text-grey;
-//   }
-//  }
-// }
-
-// @include tablet {
-
-//  .artist{
-//   border: none;
-//   margin: 0.5rem;
-//  }
-// }
-
-// @include mobile {
-
-//  .artist{
-//   border: none;
-
-//   .image_container{
-//    width: 4rem;
-//    height: 4rem;
-//   }
-
-//   #{&}_name {
-//    font-weight: 500;
-//   }
+ .artist{
+  border: 1px solid $clr-artist-border;
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  grid-template-rows: 2rem 2rem;
+  grid-gap: 0.5rem;
+  width: 18rem;
+  margin-top: 3rem;
   
-//   #{&}_location {
-//    align-self: flex-end;
-//    color: $clr-text-grey;
-//   }
-//  }
-// }
+  .image_container{
+   position: relative;
+   grid-row: 1 / 3;
+   height: 4.5rem;
+   width: 4.5rem;
+  }
+
+  #{&}_name{
+   font-weight: 500;
+  }
+
+  #{&}_location{
+   align-self: flex-end;
+   color: $clr-text-grey;
+  }
+ }
+}
+
+@include max-md {
+
+ .artist{
+  border: none;
+  margin: 0.5rem;
+ }
+}
+
+@include max-tablet {
+
+ .artist{
+  border: none;
+
+  .image_container{
+   width: 4rem;
+   height: 4rem;
+  }
+
+  #{&}_name {
+   font-weight: 500;
+  }
+  
+  #{&}_location {
+   align-self: flex-end;
+   color: $clr-text-grey;
+  }
+ }
+}

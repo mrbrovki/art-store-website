@@ -1,1 +1,21 @@
-/* No CSS *//*# sourceMappingURL=featured_animated_stick.module.css.map */
+@media (max-width: 3000px) {
+  .stick_container {
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    border-bottom: 1px solid black;
+  }
+}
+
+@media (max-width: 768px) {
+  .stick_container {
+    height: 8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .stick_container {
+    display: none;
+  }
+}
+/*# sourceMappingURL=featured_animated_stick.module.css.map */

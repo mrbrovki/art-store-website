@@ -20,7 +20,7 @@ export const getStaticProps:GetStaticProps = async () => {
 const Home:NextPage<{artists: FeaturedArtist[], collectionData: CollectionData}> = ({artists, collectionData}) => {
   return (
     <>
-      {/* <Featured artists={artists} collectionData={collectionData}/> */}
+      <Featured artists={artists} collectionData={collectionData}/>
     </>
   );
 };

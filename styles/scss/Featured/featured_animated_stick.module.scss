@@ -1,29 +1,27 @@
 @import '../variables';
 @import '../breakpoints';
 
-// @include desktop {
+@include max-xl {
  
-//  .stick_container{
-//   position: relative;
-//   width: 100%;
-//   margin-top: 6rem;
-//   height: 12rem;
-//   border-bottom: 1px solid black;
-//  }
-// }
+ .stick_container{
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  border-bottom: 1px solid black;
+ }
+}
 
-// @include tablet {
+@include max-md {
 
-//  .stick_container{
-//   height: 10rem;
-//   margin-top: 4rem;
-//  }
-// }
+ .stick_container{
+  height: 8rem;
+ }
+}
 
-// @include mobile {
 
-//  .stick_container{
-//   margin-top: 2rem;
-//   height: 8rem;
-//  }
-// }
+@include max-tablet{
+
+ .stick_container{
+  display: none;
+ }
+}

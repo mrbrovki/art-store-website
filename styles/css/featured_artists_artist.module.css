@@ -1,1 +1,56 @@
-/* No CSS *//*# sourceMappingURL=featured_artists_artist.module.css.map */
+@media (max-width: 3000px) {
+  .artist {
+    border: 1px solid #8787874d;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 4.5rem 1fr;
+        grid-template-columns: 4.5rem 1fr;
+    -ms-grid-rows: 2rem 2rem;
+        grid-template-rows: 2rem 2rem;
+    grid-gap: 0.5rem;
+    width: 18rem;
+    margin-top: 3rem;
+  }
+  .artist .image_container {
+    position: relative;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+  .artist .artist_name {
+    font-weight: 500;
+  }
+  .artist .artist_location {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    color: #666666;
+  }
+}
+
+@media (max-width: 768px) {
+  .artist {
+    border: none;
+    margin: 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .artist {
+    border: none;
+  }
+  .artist .image_container {
+    width: 4rem;
+    height: 4rem;
+  }
+  .artist .artist_name {
+    font-weight: 500;
+  }
+  .artist .artist_location {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    color: #666666;
+  }
+}
+/*# sourceMappingURL=featured_artists_artist.module.css.map */

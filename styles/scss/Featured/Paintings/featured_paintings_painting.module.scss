@@ -1,52 +1,68 @@
 @import '../../variables';
 @import '../../breakpoints';
 
-// @include desktop {
+@include max-xl {
 
-//   .painting_container{
-//    height: 26rem;
-//    display: flex;
-//    flex-flow: column nowrap;
-//    justify-content: center;
+  .painting_container{
+   height: 26rem;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: center;
 
-//    .image_container{
-//     position: relative;
-//     width: 22rem;
-//     height: 22rem;
-//    }
+   .image_container{
+    position: relative;
+    width: 22rem;
+    height: 22rem;
+    filter: drop-shadow(0 0 10px #00000057)
+   }
 
-//    .painting_name,
-//    .artist_name{
-//     margin: 0;
-//     text-align: center;
-//    }
+   .painting_name,
+   .artist_name{
+    margin: 0;
+    text-align: center;
+   }
 
-//    &:hover{
-//       box-shadow: 0 0 10px #00000021;
-//     }
-//   }
-// }
+   .painting_name{
+    font-weight: 500;
+   }
 
-// @include tablet {
+   &:hover{
+      box-shadow: 0 0 10px #00000021;
+    }
+  }
+}
+@include max-lg{
 
-//   .painting_container{
-//     height: 24rem;
+  .painting_container{
+    height: 22rem;
 
-//     .image_container {
-//       width: 20rem;
-//       height: 20rem;
-//     }
-//   }
-// }
+    .image_container{
+      height: 18rem;
+      width: 18rem;
+    }
+  }
+}
 
-// @include mobile {
+@include max-tablet{
 
-//   .painting_container{
-//     height: 17rem;
+  .painting_container{
+    height: 30rem;
+    width: 90%;
 
-//     .image_container{
-//       width: 15rem;
-//       height: 15rem;
-//     }
-//   }
-// }
+    .image_container{
+      width: 100%;
+      height: 25rem;
+
+      .painting_name,
+        .artist_name {
+          line-height: 2.5rem;
+          margin: 0;
+          text-align: center;
+        }
+    }
+
+    &:hover{
+      box-shadow: none;
+    }
+  }
+}

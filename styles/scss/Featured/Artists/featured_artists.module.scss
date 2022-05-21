@@ -1,48 +1,48 @@
 @import '../../variables';
 @import '../../breakpoints';
 
-// @include desktop {
+@include max-xl {
 
-//  .artists_container{
-//   height: 30rem;
-//   background-color: $artists-bg-clr;
-//   overflow-y: hidden;
+ .artists_container{
+  height: 30rem;
+  background-color: $artists-bg-clr;
+  overflow-y: hidden;
   
-//   .artists_heading{
-//    text-transform: uppercase;
-//    color: $clr-text-grey;
-//    font-size: 1.25rem;
-//    font-weight: 500;
-//    margin: 2rem 8rem;
-//   }
+  .artists_heading{
+   text-transform: uppercase;
+   color: $clr-text-grey;
+   font-size: 1.25rem;
+   font-weight: 500;
+   margin: 2rem 8rem;
+  }
 
-//   .artists{
-//    display: flex;
-//    flex-flow: row nowrap;
-//    align-items: center;
-//    justify-content: space-around;
-//   }
-//  }
-// }
+  .artists{
+   display: flex;
+   flex-flow: row nowrap;
+   align-items: center;
+   justify-content: space-around;
+  }
+ }
+}
 
-// @include tablet {
+@include max-lg {
  
-//  .artists_container{
-//   height: 40rem;
+ .artists_container{
+  height: 40rem;
 
-//   .artists_heading {
-//    text-align: center;
-//   }
-//   .artists{
-//    flex-flow: column nowrap;
-//   } 
-//  }
-// }
+  .artists_heading {
+   text-align: center;
+  }
+  .artists{
+   flex-flow: column nowrap;
+  } 
+ }
+}
 
 
-// @include mobile {
+@include max-tablet {
 
-//  .artists_container{
-//   min-height: 50rem;
-//  }
-// }
+ .artists_container{
+  min-height: 50rem;
+ }
+}
