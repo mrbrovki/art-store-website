@@ -9,9 +9,9 @@ import { toggleRoomView } from '../../../lib/utils';
 
 
 const GoBackButton:FC = () => {
-  const {state: {room}, dispatch} = useContext(Context);
+  const {state: {roomView}, dispatch} = useContext(Context);
  return (
-  <button className={styles.btn + ' ' + styles[room]} onClick={() => toggleRoomView(room, dispatch)}>
+  <button className={styles.btn + ' ' + styles[roomView]} onClick={() => toggleRoomView(roomView, dispatch)}>
     <Image src='/assets/arrow-left-icon.svg' layout='fill' objectFit='contain' objectPosition='center' alt='arrow icon' />
   </button>
  );

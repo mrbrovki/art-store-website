@@ -13,9 +13,9 @@ import ShareButton from './ShareButton';
 
 
 const View:FC<{imageSrc: string}> = ({imageSrc}) => {
- const {state: {room}} = useContext(Context); 
+ const {state: {roomView}} = useContext(Context); 
  return (
-  <div className={styles.view_container + ' ' + styles[room]}>
+  <div className={styles.view_container + ' ' + styles[roomView]}>
    <ProductImage imageSrc={imageSrc} priority={true} />
    <div className={styles.btns}>
     <RoomViewButton />

@@ -1,7 +1,7 @@
 import React, { FC, useCallback, useEffect, useState, useRef } from 'react';
 import { Photo, PhotosWithTotalResults } from 'pexels';
 // types
-import { Categories, SearchQuery } from '../../../lib/Types';
+import { Categories, Category, SearchQuery } from '../../../lib/Types';
 // components
 import Product from './Product';
 // constants
@@ -9,18 +9,26 @@ import { intersectionOption, per_page } from '../../../lib/constants';
 // styles
 import styles from '../../../styles/css/category_products.module.css';
 
+const initPhotos = {
+  paintings: [],
+  drawings: [],
+  sculpture: []
+};
 
-
+const initPageNum = {
+  paintings: 0,
+  drawings: 0,
+  sculpture: 0
+};
 
 const Products: FC<{ categoryName: Categories }> = ({ categoryName: name }) => {
-  const [query, setQuery] = useState<SearchQuery>();
-  const [photos, setPhotos] = useState<Photo[]>();
-  const [pageNum, setPageNum] = useState(0);
+  const [query, setQuery] = useState<SearchQuery>('');
+  const [photos, setPhotos] = useState<Category<Photo[]>>(initPhotos);
+  const [pageNum, setPageNum] = useState<Category<number>>(initPageNum);
   const loader = useRef(null);
-
   const fetchData = async () => {
     if (!query) return;
-    const res = await fetch(`https://api.pexels.com/v1/search/?page=${pageNum}&per_page=${per_page}&query=${query}`, {
+    const res = await fetch(`https://api.pexels.com/v1/search/?page=${pageNum[name]}&per_page=${per_page}&query=${query}`, {
       method: 'GET',
       headers: {
         'content-type': 'application/json',
@@ -29,20 +37,21 @@ const Products: FC<{ categoryName: Categories }> = ({ categoryName: name }) => {
     });
     const data = await res.json() as PhotosWithTotalResults;
     setPhotos(prev => {
-      if (prev) {
-        return [...prev, ...data.photos] as Photo[];
-      } else {
-        return data.photos;
-      }
+      return {...prev, [name]: [...prev[name] , ...data.photos]};
     });
   };
   const handleObserver = useCallback((entries: IntersectionObserverEntry[]) => {
     const target = entries[0];
     if (target.isIntersecting) {
-      setPageNum(prev => prev + 1);
+      setPageNum(prev => {
+        return(
+          {...prev, [name]: prev[name] + 1}
+        )
+      });
     }
-  }, []);
+  }, [name]);
 
+  //  observer
   useEffect(() => {
     const observer = new IntersectionObserver(handleObserver, intersectionOption);
     if (loader.current) observer.observe(loader.current);
@@ -67,20 +76,16 @@ const Products: FC<{ categoryName: Categories }> = ({ categoryName: name }) => {
     }
   }, [name])
 
+  // fetching data
   useEffect(() => {
     fetchData();
   }, [pageNum]);
 
-  useEffect(() => {
-    if(!query) return;
-    setPhotos([]);
-  }, [query]);
-
   return (
     <>
       <div className={styles.products_container}>
-        {photos?.map(photo => {
-          const { src: { original: imageSrc }, photographer: author, id } = photo;
+        {photos[name].map(photo => {
+          const { src: { large: imageSrc }, photographer: author, id } = photo;
             return (
               <Product imageSrc={imageSrc} name={'Wallowing Breeze'} author={author} id={id} key={id} />
             );

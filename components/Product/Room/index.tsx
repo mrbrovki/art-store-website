@@ -3,7 +3,9 @@ import { Context } from '../../../context';
 import ProductImage from '../View/ProductImage'
 import GoBackButton from './GoBack'
 import RoomImage from './RoomImage'
-import Image from 'next/image';
+
+
+
 const Room:FC<{imageSrc: string}> = ({imageSrc}) => {
   return (
     <>

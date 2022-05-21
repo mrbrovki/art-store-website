@@ -8,7 +8,7 @@ interface ContextProps{
  dispatch: Dispatch<Action>;
 };
 const initState:State = {
-  room: 'hidden'
+  roomView: 'hidden'
 };
 export const Context = createContext<ContextProps>({state: initState, dispatch: () => {}});
 const pexelsKey = process.env.ENV_PEXELS_API_KEY as string;
@@ -19,7 +19,7 @@ const AppContext:FC<AppContextProps<ReactNode>> = ({children}) => {
   const {type, payload} = action;
   switch(type){
     case 'ROOM':
-      return {...state, room: payload}
+      return {...state, roomView: payload}
    default:
     return{...state};
   }

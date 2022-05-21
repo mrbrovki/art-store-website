@@ -13,9 +13,9 @@ import Shipment from './Shipment';
 
 
 const Details:FC<{details: DetailsData<string>}> = ({details}) => {
-  const {state: {room}} = useContext(Context);
+  const {state: {roomView}} = useContext(Context);
  return (
-  <div className={styles.details_container + ' ' + styles[room]}>
+  <div className={styles.details_container + ' ' + styles[roomView]}>
     <GoBackButton />
     <About details={details}/>
     <Shipment price={details.price}/>

@@ -12,9 +12,9 @@ import { Context } from '../../../context';
 
 
 const Header:FC = () => {
-  const {state: {room}} = useContext(Context);
+  const {state: {roomView}} = useContext(Context);
   return (
-    <header className={styles.header_container + ' ' + styles[room]}>
+    <header className={styles.header_container + ' ' + styles[roomView]}>
         <Logo />
         <Navigation />
         <Cart />

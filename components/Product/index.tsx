@@ -1,5 +1,4 @@
 import React, {FC} from 'react';
-import { PhotoProps } from '../../lib/Types';
 // types
 // components
 // context
@@ -7,10 +6,11 @@ import { PhotoProps } from '../../lib/Types';
 import Details from './Details';
 import View from './View';
 import Room from './Room';
+import { Photo } from 'pexels';
 
 
 
-const Product:FC<{photo: PhotoProps}> = ({photo}) => {
+const Product:FC<{photo: Photo}> = ({photo}) => {
  const viewData = photo.src.original;
  const detailsData = {
   name: 'Wallowing Breeze',
