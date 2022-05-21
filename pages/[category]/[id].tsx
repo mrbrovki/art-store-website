@@ -1,13 +1,12 @@
 import React from 'react';
-//  types
-import { GetServerSideProps, NextPage } from 'next';
-import {PhotoProps} from '../../lib/Types';
-// components
-// context
-// styles
-import Product from '../../components/Product';
-import { ParsedUrlQuery } from 'querystring';
 import { client } from '../../context';
+//  types
+import { ParsedUrlQuery } from 'querystring';
+import { GetServerSideProps, NextPage } from 'next';
+import {Photo} from 'pexels';
+// components
+import Product from '../../components/Product';
+
 
 export const getServerSideProps:GetServerSideProps = async (context) => {
   const {id}:ParsedUrlQuery = context.query;
@@ -21,7 +20,7 @@ export const getServerSideProps:GetServerSideProps = async (context) => {
 };
 
 
-const ProductPage:NextPage<{photo: PhotoProps}> = ({photo}) => {
+const ProductPage:NextPage<{photo: Photo}> = ({photo}) => {
   return (
     <>
       <Product photo={photo}/>

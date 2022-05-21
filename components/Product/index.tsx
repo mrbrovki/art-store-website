@@ -1,12 +1,10 @@
 import React, {FC} from 'react';
 // types
-// components
-// context
-// styles
-import Details from './Details';
-import View from './View';
-import Room from './Room';
 import { Photo } from 'pexels';
+// components
+import View from './View';
+import Details from './Details';
+import Room from './Room';
 
 
 

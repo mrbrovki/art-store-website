@@ -1,9 +1,6 @@
 import React, {FC} from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-// types
-// components
-// context
 // styles
 import styles from '../../../styles/css/featured_paintings_painting.module.css';
 

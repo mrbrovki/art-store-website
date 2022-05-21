@@ -1,8 +1,5 @@
 import React, {FC} from 'react';
 import Image from 'next/image';
-// types
-// components
-// context
 // styles
 import styles from '../../styles/css/featured_animated_stick.module.css';
 
