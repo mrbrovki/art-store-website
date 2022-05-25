@@ -13,7 +13,6 @@ const Featured:FC<{artists: FeaturedArtist[], collectionData: CollectionData}> =
  return (
   <>
    <Paintings media={media}/>
-   <AnimatedStick />
    <Artists artists={artists}/>
   </>
  );
