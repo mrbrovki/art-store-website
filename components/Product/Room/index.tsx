@@ -1,6 +1,4 @@
-import React, { FC, useContext } from 'react'
-import { Context } from '../../../context';
-import ProductImage from '../View/ProductImage'
+import React, { FC } from 'react'
 import GoBackButton from './GoBack'
 import RoomImage from './RoomImage'
 

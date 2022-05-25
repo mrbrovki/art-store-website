@@ -3,7 +3,6 @@ import React, {FC} from 'react';
 import { FeaturedArtist } from '../../../lib/Types';
 // components
 import Artist from './Artist';
-// context
 // styles
 import styles from '../../../styles/css/featured_artists.module.css';
 

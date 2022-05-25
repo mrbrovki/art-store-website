@@ -1,10 +1,7 @@
 import React, { ReactNode, FC } from 'react';
-// types
 // components
 import Header from './Header';
 import Main from './Main';
-// context
-// styles
 
 
 

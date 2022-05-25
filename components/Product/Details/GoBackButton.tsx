@@ -1,7 +1,6 @@
 import React, {FC} from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-
 // styles
 import styles from '../../../styles/css/go_back_btn.module.css';
 
@@ -9,7 +8,6 @@ import styles from '../../../styles/css/go_back_btn.module.css';
 
 const GoBackButton:FC = () => {
  const router = useRouter();
-
  return (
   <button className={styles.btn_container} onClick={router.back}>
    <span className={styles.arrow_container}>

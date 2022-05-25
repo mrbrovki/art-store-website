@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 // types
-import { Categories } from '../../lib/Types';
+import { CategoryName } from '../../lib/Types';
 // components
 import Name from './Name';
 import Products from './Products';
@@ -9,11 +9,11 @@ import styles from '../../styles/css/category.module.css';
 
 
 
-const Category:FC<{category: Categories}> = ({category}) => {
+const Category:FC<{category: CategoryName, pexelsKey: string}> = (props) => {
  return (
   <div className={styles.category_container}>
-   <Name categoryName={category} />
-   <Products categoryName={category}/>
+   <Name categoryName={props.category} />
+   <Products {...props}/>
   </div>
  );
 };

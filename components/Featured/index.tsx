@@ -4,9 +4,8 @@ import { CollectionData, FeaturedArtist } from '../../lib/Types';
 // components
 import Artists from './Artists';
 // styles
-import styles from '../../styles/css/featured.module.css';
-import AnimatedStick from './AnimatedStick';
 import Paintings from './Paintings';
+import AnimatedStick from './AnimatedStick';
 
 
 

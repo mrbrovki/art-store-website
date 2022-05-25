@@ -1,18 +1,12 @@
 import React, {FC} from 'react';
 import Image from 'next/image';
-// types
-// components
-import CartItems from './CartItems';
-// context
-// styles
-import styles from '../../../../styles/css/cart.module.css';
 
 
 
 const Cart:FC = () => {
  return (
   <>
-   <div className={styles.cart_container}>
+   <div>
     <Image src='/assets/cart-icon.svg' width={24} height={24} />
    </div>
   </>

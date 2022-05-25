@@ -3,7 +3,6 @@ import React, {FC} from 'react';
 import { Media } from '../../../lib/Types';
 // components
 import Painting from './Painting';
-// context
 // styles
 import styles from '../../../styles/css/featured_paintings.module.css';
 

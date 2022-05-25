@@ -1,8 +1,5 @@
 import React, {FC} from 'react';
 import Image from 'next/image';
-// types
-// components
-// context
 // styles
 import styles from '../../../styles/css/product_view_room_image.module.css';
 

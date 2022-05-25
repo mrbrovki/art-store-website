@@ -1,11 +1,8 @@
 import React, { FC, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-//  types
-//  components
 //  const
-import { categories } from '../../../lib/utils';
-//  context
+import { categories } from '../../../lib/constants';
 //  styles
 import styles from '../../../styles/css/navigation.module.css';
 

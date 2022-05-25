@@ -1,7 +1,7 @@
 import React, { FC, useCallback, useEffect, useState, useRef } from 'react';
-import { Photo, PhotosWithTotalResults } from 'pexels';
 // types
-import { Categories, Category, SearchQuery } from '../../../lib/Types';
+import { Photo, PhotosWithTotalResults } from 'pexels';
+import { CategoryName, Category, SearchQuery } from '../../../lib/Types';
 // components
 import Product from './Product';
 // constants
@@ -21,7 +21,8 @@ const initPageNum = {
   sculpture: 0
 };
 
-const Products: FC<{ categoryName: Categories }> = ({ categoryName: name }) => {
+
+const Products: FC<{ category: CategoryName, pexelsKey: string }> = ({ category: name, pexelsKey }) => {
   const [query, setQuery] = useState<SearchQuery>('');
   const [photos, setPhotos] = useState<Category<Photo[]>>(initPhotos);
   const [pageNum, setPageNum] = useState<Category<number>>(initPageNum);
@@ -32,7 +33,7 @@ const Products: FC<{ categoryName: Categories }> = ({ categoryName: name }) => {
       method: 'GET',
       headers: {
         'content-type': 'application/json',
-        'Authorization': '563492ad6f9170000100000130ea875f314545468bc8864c0008d7a5'
+        'Authorization': pexelsKey as string
       }
     });
     const data = await res.json() as PhotosWithTotalResults;

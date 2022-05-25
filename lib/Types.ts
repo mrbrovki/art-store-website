@@ -1,4 +1,4 @@
-import { Photo, Photos } from "pexels";
+import { Photo } from "pexels";
 
 export type Media = (Photo & {type: "Photo"})[];
 
@@ -40,7 +40,7 @@ export interface DetailsData<T>{
   price: number;
 } ;
 
-export type Categories = 'paintings' | 'drawings' | 'sculpture';
+export type CategoryName = 'paintings' | 'drawings' | 'sculpture';
 export type SearchQuery = 'abstract' | 'illustration' | 'sculpture' | '';
 
 

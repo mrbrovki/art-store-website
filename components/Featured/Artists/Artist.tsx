@@ -1,9 +1,7 @@
 import React, {FC} from 'react';
 import Image from 'next/image';
-// types
 // components
 import { FeaturedArtist } from '../../../lib/Types';
-// context
 // styles
 import styles from '../../../styles/css/featured_artists_artist.module.css';
 

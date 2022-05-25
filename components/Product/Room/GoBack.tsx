@@ -1,11 +1,11 @@
 import React, {FC, useContext} from 'react';
-import { useRouter } from 'next/router';
 import Image from 'next/image';
-
+// utils
+import { toggleRoomView } from '../../../lib/utils';
+//context
+import { Context } from '../../../context';
 // styles
 import styles from '../../../styles/css/go_back.module.css';
-import { Context } from '../../../context';
-import { toggleRoomView } from '../../../lib/utils';
 
 
 const GoBackButton:FC = () => {

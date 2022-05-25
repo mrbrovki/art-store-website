@@ -1,13 +1,11 @@
 import Image from 'next/image';
 import React, {FC, useContext} from 'react';
-// types
-// components
 // context
+import { Context } from '../../../context';
 // styles
 import styles from '../../../styles/css/view_btns.module.css';
 // utils
 import { toggleRoomView } from '../../../lib/utils';
-import { Context } from '../../../context';
 
 
 const RoomViewButton:FC = () => {

@@ -1,13 +1,12 @@
 import React, { FC, useContext } from 'react';
-// types
 // components
 import Logo from './Logo';
 import Navigation from './Navigation';
 import Cart from './Cart';
 // context
+import { Context } from '../../../context';
 // styles
 import styles from '../../../styles/css/header.module.css'
-import { Context } from '../../../context';
 
 
 

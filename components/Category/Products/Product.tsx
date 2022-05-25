@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 // types
 import { CategoryProduct } from '../../../lib/Types';
-// components
 // styles
 import styles from '../../../styles/css/category_products_product.module.css';
 

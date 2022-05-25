@@ -1,11 +1,8 @@
 import React, {FC} from 'react';
-import { DetailsData } from '../../../lib/Types';
 // types
-// components
-// context
+import { DetailsData } from '../../../lib/Types';
 // styles
 import styles from '../../../styles/css/product_details_about.module.css';
-import Shipment from './Shipment';
 
 
 
