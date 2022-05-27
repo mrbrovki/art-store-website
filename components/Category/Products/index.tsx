@@ -1,35 +1,25 @@
-import React, { FC, useCallback, useEffect, useState, useRef } from 'react';
+import React, { FC, useCallback, useEffect, useState, useRef, useContext } from 'react';
 // types
-import { Photo, PhotosWithTotalResults } from 'pexels';
-import { CategoryName, Category, SearchQuery } from '../../../lib/Types';
+import { PhotosWithTotalResults } from 'pexels';
+import { CategoryName, SearchQuery } from '../../../lib/Types';
 // components
 import Product from './Product';
 // constants
-import { intersectionOption, per_page } from '../../../lib/constants';
+import {intersectionOption, per_page } from '../../../lib/constants';
+// context
+import { Context } from '../../../context';
 // styles
 import styles from '../../../styles/css/category_products.module.css';
 
-const initPhotos = {
-  paintings: [],
-  drawings: [],
-  sculpture: []
-};
-
-const initPageNum = {
-  paintings: 0,
-  drawings: 0,
-  sculpture: 0
-};
-
 
 const Products: FC<{ category: CategoryName, pexelsKey: string }> = ({ category: name, pexelsKey }) => {
+  const {state: {photos, pages}, dispatch} = useContext(Context);
   const [query, setQuery] = useState<SearchQuery>('');
-  const [photos, setPhotos] = useState<Category<Photo[]>>(initPhotos);
-  const [pageNum, setPageNum] = useState<Category<number>>(initPageNum);
   const loader = useRef(null);
   const fetchData = async () => {
     if (!query) return;
-    const res = await fetch(`https://api.pexels.com/v1/search/?page=${pageNum[name]}&per_page=${per_page}&query=${query}`, {
+    console.log('render')
+    const res = await fetch(`https://api.pexels.com/v1/search/?page=${pages[name]}&per_page=${per_page}&query=${query}`, {
       method: 'GET',
       headers: {
         'content-type': 'application/json',
@@ -37,18 +27,12 @@ const Products: FC<{ category: CategoryName, pexelsKey: string }> = ({ category:
       }
     });
     const data = await res.json() as PhotosWithTotalResults;
-    setPhotos(prev => {
-      return {...prev, [name]: [...prev[name] , ...data.photos]};
-    });
+    dispatch({type: 'PHOTOS', payload: {...photos, [name]: [...photos[name], ...data.photos]}});
   };
   const handleObserver = useCallback((entries: IntersectionObserverEntry[]) => {
     const target = entries[0];
     if (target.isIntersecting) {
-      setPageNum(prev => {
-        return(
-          {...prev, [name]: prev[name] + 1}
-        )
-      });
+      dispatch({type: 'PAGES', payload: name});
     }
   }, [name]);
 
@@ -80,7 +64,7 @@ const Products: FC<{ category: CategoryName, pexelsKey: string }> = ({ category:
   // fetching data
   useEffect(() => {
     fetchData();
-  }, [pageNum]);
+  }, [pages]);
 
   return (
     <>
@@ -88,7 +72,7 @@ const Products: FC<{ category: CategoryName, pexelsKey: string }> = ({ category:
         {photos[name].map(photo => {
           const { src: { large: imageSrc }, photographer: author, id } = photo;
             return (
-              <Product imageSrc={imageSrc} name={'Wallowing Breeze'} author={author} id={id} key={id} />
+              <Product imageSrc={imageSrc} name={'Wallowing Breeze'} author={author} id={id} key={name+id} />
             );
         })}
       </div>

@@ -12,10 +12,14 @@ export interface CollectionData{
 
 export interface State{
   roomView: 'visible' | 'hidden';
+  photos: Category<Photo[]>;
+  pages:Category<number>;
 };
 
 export type Action = 
 | {type: 'ROOM', payload: 'visible' | 'hidden'}
+| {type: 'PHOTOS', payload: Category<Photo[]>}
+| {type: 'PAGES', payload: CategoryName}
 
 export interface AppContextProps<T>{
  children: T;

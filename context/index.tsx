@@ -1,4 +1,6 @@
 import React, {createContext, Dispatch, FC, ReactNode, useReducer} from 'react';
+//  constants
+import { initState } from '../lib/constants';
 // types 
 import { State, Action, AppContextProps } from '../lib/Types';
 
@@ -6,9 +8,7 @@ interface ContextProps{
  state: State;
  dispatch: Dispatch<Action>;
 };
-const initState:State = {
-  roomView: 'hidden'
-};
+
 export const Context = createContext<ContextProps>({state: initState, dispatch: () => {}});
 
 const AppContext:FC<AppContextProps<ReactNode>> = ({children}) => {
@@ -17,6 +17,10 @@ const AppContext:FC<AppContextProps<ReactNode>> = ({children}) => {
   switch(type){
     case 'ROOM':
       return {...state, roomView: payload}
+    case 'PHOTOS':
+      return {...state, photos: payload};
+    case 'PAGES':
+      return {...state, pages: {...state.pages, [payload]: state.pages[payload] + 1}};
    default:
     return{...state};
   }
