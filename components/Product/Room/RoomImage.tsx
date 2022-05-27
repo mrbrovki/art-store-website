@@ -9,10 +9,10 @@ const RoomImage:FC<{imageSrc:string}> = ({imageSrc}) => {
  return (
   <>
    <div className={styles.image_container}>
-    <Image src='/assets/room.jpg' alt='room image' layout='fill' objectFit='cover' objectPosition='center' />
+    <Image src='/assets/room.jpg' alt='room image' layout='fill' objectFit='cover' objectPosition='center'/>
    </div>
    <div className={styles.product_image}>
-     <Image src={imageSrc} layout='fill' objectFit='contain' objectPosition='center' />
+     <Image src={imageSrc} layout='fill' objectFit='contain' objectPosition='center' alt='product'/>
    </div>
   </>
  );

@@ -14,7 +14,7 @@ const Navigation:FC = () => {
   return (
     <>
       <div className={styles.hamburger} onClick={toggleNav}>
-        <Image src='/assets/hamburger.svg' width={24} height={24} />
+        <Image src='/assets/hamburger.svg' width={24} height={24} alt='hamburger'/>
       </div>
       <nav className={styles.nav_container + ' ' + styles[navVisibility]}>
         <ul className={styles.list_container}>

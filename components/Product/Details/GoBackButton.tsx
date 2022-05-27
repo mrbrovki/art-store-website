@@ -11,7 +11,7 @@ const GoBackButton:FC = () => {
  return (
   <button className={styles.btn_container} onClick={router.back}>
    <span className={styles.arrow_container}>
-    <Image src='/assets/arrow-left-icon.svg' width={16} height={16} />
+    <Image src='/assets/arrow-left-icon.svg' width={16} height={16} alt='arrow left'/>
    </span>
    <span className={styles.back}>back</span>
   </button>
