@@ -14,6 +14,7 @@ const Featured:FC<{artists: FeaturedArtist[], collectionData: CollectionData}> =
   <>
    <Paintings media={media}/>
    <Artists artists={artists}/>
+   <AnimatedStick />
   </>
  );
 };
