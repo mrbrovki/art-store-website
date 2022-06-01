@@ -27,6 +27,9 @@ const AppContext:FC<AppContextProps<ReactNode>> = ({children}) => {
       return {...state, isCartVisible: payload};
     case 'ADD_TO_CART':
       return {...state, items: [...state.items, payload]};
+    case 'REMOVE_ITEM':
+      const newItems = state.items.filter(item => item.id !== payload);
+      return {...state, items: newItems};
     case 'CURRENT_ITEM':
       return {...state, currentItem: payload};
    default:

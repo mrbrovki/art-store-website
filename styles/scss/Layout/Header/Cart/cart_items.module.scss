@@ -19,7 +19,7 @@
   .item_container{
    margin: 1rem 0;
    display: grid;
-   grid-template-columns: 6rem 1fr 5rem;
+   grid-template-columns: 6rem 1fr 3rem 1rem;
    grid-gap: 0 1rem;
 
    .image_container {
@@ -36,10 +36,12 @@
 
     .name{
      font-weight: 500;
+     margin: 0;
     }
 
     .author{
      font-weight: 300;
+     margin: 0;
     }
    }
    .price{
@@ -47,6 +49,16 @@
     align-self: center;
     font-weight: 500;
     justify-self: right;
+   }
+
+   .cancel{
+     align-self: center;
+     font-weight: 700;
+
+     &:hover{
+       color: #982929;
+       cursor: pointer;
+     }
    }
   }
 
@@ -89,8 +101,8 @@
 
  .cart_items_container{
   right: 0;
-  width: 80%;
-  left: 10%;
+  width: 90%;
+  left: 5%;
   top: 5rem;
 
   .checkout_link{

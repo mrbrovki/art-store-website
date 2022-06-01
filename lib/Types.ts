@@ -35,6 +35,7 @@ export type Action =
 | {type: 'CART', payload: boolean}
 | {type: 'CURRENT_ITEM', payload: Item}
 | {type: 'ADD_TO_CART', payload: Item}
+| {type: 'REMOVE_ITEM', payload: number}
 
 export interface AppContextProps<T>{
  children: T;

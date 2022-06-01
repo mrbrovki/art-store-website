@@ -6,7 +6,7 @@ import styles from '../../styles/css/overlay.module.css';
 
 
 
-const Overlay:FC<{children: ReactNode}> = ({children}) => {
+const Overlay:FC = () => {
  const {state: {isOverlay}, dispatch} = useContext(Context);
 
  const overlayClick = () => {
@@ -17,11 +17,7 @@ const Overlay:FC<{children: ReactNode}> = ({children}) => {
  return(
   <>
    {isOverlay && 
-   <div className={styles.overlay} onClick={overlayClick}>
-    {
-     children
-    }
-    </div>}
+   <div className={styles.overlay} onClick={overlayClick}></div>}
   </>
  );
 };
