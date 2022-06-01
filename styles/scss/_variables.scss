@@ -10,8 +10,24 @@ $artists-bg-clr: #F4F4F2;
 
 //layout
 $header-bg-clr: $clr-white;
+$bg-clr-overlay: #0000005b;
+
 // product
 $product-view-bg: $clr-grey;
 $grey-line-clr: #0000006d;
 $image-shadow-clr: #0000003f;
 $view-btns-clr: $clr-text-grey;
+
+@mixin fadeIn {
+ animation:  fadeIn 0.3s forwards
+}
+
+@keyframes fadeIn {
+  from {
+   opacity: 0;
+  }
+
+  to {
+   opacity: 1;
+  }
+}

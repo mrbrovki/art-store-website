@@ -17,12 +17,13 @@
 }
 
 @media (max-width: 3000px) {
-  .image_container {
+  .icon_container {
     position: relative;
-    height: 70%;
-    width: 70%;
-    -webkit-filter: drop-shadow(0 0 16px #0000003f);
-            filter: drop-shadow(0 0 16px #0000003f);
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .icon_container:hover {
+    cursor: pointer;
   }
 }
-/*# sourceMappingURL=product_view_image.module.css.map */
+/*# sourceMappingURL=cart.module.css.map */

@@ -1,6 +1,8 @@
-import React, {FC} from 'react';
+import React, {FC, useContext, useEffect} from 'react';
 // types
 import { Photo } from 'pexels';
+// context
+import { Context } from '../../context';
 // components
 import View from './View';
 import Details from './Details';
@@ -9,6 +11,7 @@ import Room from './Room';
 
 
 const Product:FC<{photo: Photo}> = ({photo}) => {
+ const {state, dispatch} = useContext(Context)
  const viewData = photo.src.original;
  const detailsData = {
   name: 'Wallowing Breeze',
@@ -20,6 +23,17 @@ const Product:FC<{photo: Photo}> = ({photo}) => {
   price: 620
  }; 
 
+ useEffect(()=>{
+  dispatch({type: 'CURRENT_ITEM', payload: {
+  id: photo.id,
+  name: detailsData.name,
+  author: detailsData.author,
+  image: photo.src.small,
+  price: detailsData.price
+ }});
+ }, [photo])
+ 
+ console.log(state.items)
  return (
   <>
    <View imageSrc={viewData}/>

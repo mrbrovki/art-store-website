@@ -32,7 +32,7 @@ const Shipment:FC<{price: number}> = ({price}) => {
      Estimated to ship in 3-7 days within USA
     </span>
    </div>
-   <AddToCart />
+   <AddToCart/>
    <p>Taxes and shipping fees will apply upon checkout</p>
   </>
  );

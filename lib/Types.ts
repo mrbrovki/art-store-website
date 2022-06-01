@@ -9,17 +9,32 @@ export interface CollectionData{
   media: Media;
 };
 
-
 export interface State{
   roomView: 'visible' | 'hidden';
   photos: Category<Photo[]>;
   pages:Category<number>;
+  isCartVisible: boolean;
+  isOverlay: boolean;
+  currentItem: Item;
+  items: Item[];
+};
+
+export interface Item{
+  id: number | undefined;
+  name: string | undefined;
+  author: string | undefined;
+  image: string | undefined;
+  price: number | undefined;
 };
 
 export type Action = 
 | {type: 'ROOM', payload: 'visible' | 'hidden'}
 | {type: 'PHOTOS', payload: Category<Photo[]>}
 | {type: 'PAGES', payload: CategoryName}
+| {type: 'OVERLAY', payload: boolean}
+| {type: 'CART', payload: boolean}
+| {type: 'CURRENT_ITEM', payload: Item}
+| {type: 'ADD_TO_CART', payload: Item}
 
 export interface AppContextProps<T>{
  children: T;
@@ -34,7 +49,7 @@ export interface FeaturedArtist{
   country: string;
 };
 
-export interface DetailsData<T>{
+export interface DetailsData<T = string>{
   name: T;
   author: T;
   info: {

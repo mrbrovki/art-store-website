@@ -23,5 +23,15 @@ export const initPages = {
  export const initState:State = {
   roomView: 'hidden',
   photos: initPhotos,
-  pages: initPages
+  pages: initPages,
+  isCartVisible: false,
+  isOverlay: false,
+  currentItem: {
+    id: undefined,
+    author: undefined,
+    name: undefined,
+    price: undefined,
+    image: undefined
+  },
+  items: []
 };

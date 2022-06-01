@@ -1,0 +1,15 @@
+@import '../../../breakpoints';
+@import '../../../variables';
+
+@include max-xl{
+
+ .icon_container{
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  
+  &:hover{
+   cursor: pointer;
+  }
+ }
+}

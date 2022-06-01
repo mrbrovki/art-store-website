@@ -21,6 +21,14 @@ const AppContext:FC<AppContextProps<ReactNode>> = ({children}) => {
       return {...state, photos: payload};
     case 'PAGES':
       return {...state, pages: {...state.pages, [payload]: state.pages[payload] + 1}};
+    case 'OVERLAY':
+      return {...state, isOverlay: payload};
+    case 'CART':
+      return {...state, isCartVisible: payload};
+    case 'ADD_TO_CART':
+      return {...state, items: [...state.items, payload]};
+    case 'CURRENT_ITEM':
+      return {...state, currentItem: payload};
    default:
     return{...state};
   }
