@@ -16,7 +16,9 @@ const AppContext:FC<AppContextProps<ReactNode>> = ({children}) => {
   const {type, payload} = action;
   switch(type){
     case 'ROOM':
-      return {...state, roomView: payload}
+      return {...state, roomView: payload};
+    case 'ROOM_IMAGE':
+      return {...state, roomImage: payload}
     case 'PHOTOS':
       return {...state, photos: payload};
     case 'PAGES':

@@ -27,11 +27,12 @@ export const initPages = {
   isCartVisible: false,
   isOverlay: false,
   currentItem: {
-    id: undefined,
-    author: undefined,
-    name: undefined,
-    price: undefined,
-    image: undefined
+    id: 0,
+    author: '',
+    name: '',
+    price: 0,
+    image: ''
   },
+  roomImage: '',
   items: []
 };

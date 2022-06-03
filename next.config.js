@@ -7,6 +7,6 @@ module.exports = nextConfig
 
 module.exports = {
   images: {
-    domains: ['images.pexels.com', 'api.multiavatar.com'],
+    domains: ['images.pexels.com', 'api.multiavatar.com', 'images.unsplash.com'],
   },
 }

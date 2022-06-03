@@ -11,6 +11,7 @@ export interface CollectionData{
 
 export interface State{
   roomView: 'visible' | 'hidden';
+  roomImage: string;
   photos: Category<Photo[]>;
   pages:Category<number>;
   isCartVisible: boolean;
@@ -20,15 +21,16 @@ export interface State{
 };
 
 export interface Item{
-  id: number | undefined;
-  name: string | undefined;
-  author: string | undefined;
-  image: string | undefined;
-  price: number | undefined;
+  id: number;
+  name: string;
+  author: string;
+  image: string;
+  price: number;
 };
 
 export type Action = 
 | {type: 'ROOM', payload: 'visible' | 'hidden'}
+| {type: 'ROOM_IMAGE', payload: string}
 | {type: 'PHOTOS', payload: Category<Photo[]>}
 | {type: 'PAGES', payload: CategoryName}
 | {type: 'OVERLAY', payload: boolean}

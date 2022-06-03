@@ -33,7 +33,6 @@ const Product:FC<{photo: Photo}> = ({photo}) => {
  }});
  }, [photo])
  
- console.log(state.items)
  return (
   <>
    <View imageSrc={viewData}/>

@@ -14,7 +14,7 @@
   position: absolute;
   width: 100%;
   filter: drop-shadow(0 0 10px #00000056);
-  height: 26rem;
+  height: 22rem;
   left: 0;
   z-index: -18;
   top: 10rem;
@@ -24,7 +24,6 @@
 @include max-lg{
 
  .product_image{
-   height: 24rem;
    left: 0;
  }
 }
@@ -32,7 +31,6 @@
 @include max-md{
 
  .product_image{
-   height: 22rem;
    left: 0;
  }
 }
@@ -58,6 +56,5 @@
 
   .product_image {
     height: 40%;
-    top: 10%;
   }
 }

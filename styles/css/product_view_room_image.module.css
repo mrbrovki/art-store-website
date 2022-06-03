@@ -28,7 +28,7 @@
     width: 100%;
     -webkit-filter: drop-shadow(0 0 10px #00000056);
             filter: drop-shadow(0 0 10px #00000056);
-    height: 26rem;
+    height: 22rem;
     left: 0;
     z-index: -18;
     top: 10rem;
@@ -37,14 +37,12 @@
 
 @media (max-width: 1024px) {
   .product_image {
-    height: 24rem;
     left: 0;
   }
 }
 
 @media (max-width: 768px) {
   .product_image {
-    height: 22rem;
     left: 0;
   }
 }
@@ -65,7 +63,6 @@
 @media (max-height: 1024px) {
   .product_image {
     height: 40%;
-    top: 10%;
   }
 }
 /*# sourceMappingURL=product_view_room_image.module.css.map */
