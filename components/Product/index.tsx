@@ -11,7 +11,7 @@ import Room from './Room';
 
 
 const Product:FC<{photo: Photo}> = ({photo}) => {
- const {state, dispatch} = useContext(Context)
+ const {dispatch} = useContext(Context)
  const viewData = photo.src.original;
  const detailsData = {
   name: 'Wallowing Breeze',
