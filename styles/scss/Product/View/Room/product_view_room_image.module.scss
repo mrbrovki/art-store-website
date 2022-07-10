@@ -28,6 +28,13 @@
  }
 }
 
+@include max-sm{
+
+  .product_image{
+    top: 5%;
+  }
+}
+
 @include room-max-h {
 
   .product_image {

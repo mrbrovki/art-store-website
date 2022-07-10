@@ -41,6 +41,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .product_image {
+    top: 5%;
+  }
+}
+
 @media (max-height: 1024px) {
   .product_image {
     height: 40vh;
