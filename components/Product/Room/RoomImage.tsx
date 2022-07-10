@@ -1,42 +1,28 @@
-import React, {FC, useContext, useEffect} from 'react';
+import React, {FC, useContext} from 'react';
 import Image from 'next/image';
-// styles
-import styles from '../../../styles/css/product_view_room_image.module.css';
+//  context
 import { Context } from '../../../context';
+//  styles
+import styles from '../../../styles/css/product_view_room_image.module.css';
 
-interface Room{
-  urls: {
-    full: string;
-  };
-};
+
 
 const RoomImage:FC<{imageSrc:string}> = ({imageSrc}) => {
-  const {state: {roomView, roomImage}, dispatch} = useContext(Context);
-  const fetchImage = async () => {
-    const resp = await fetch(`https://api.unsplash.com/photos/uTPYG4Bdiz0?client_id=sb1JgmtT99VPVFjTUsvcftFWSsLtYFa8cmMOSfW-WfM`);
-    const data = await resp.json() as Room;
-    dispatch({type:'ROOM_IMAGE', payload: data.urls.full})
-  };
-
-  useEffect(() => {
-    if(roomView === 'hidden' || roomImage) return;
-    fetchImage();
-  }, [roomView]);
-
- return (
-  <>
-   {roomView && roomImage &&
+  const {state: {roomView}} = useContext(Context);
+  return (
    <>
-    <div className={styles.image_container}>
-      <Image src={roomImage} alt='room image' layout='fill' objectFit='cover' objectPosition='bottom'/>
-    </div>
-    <div className={styles.product_image}>
-      <Image src={imageSrc} layout='fill' objectFit='contain' objectPosition='center' alt='product'/>
-    </div>
+    {roomView &&
+    <>
+     <div className={styles.image_container}>
+       <Image src={'/assets/room.jpg'} alt='room image' layout='fill'  objectFit='cover' objectPosition='center'/>
+     </div>
+     <div className={styles.product_image}>
+       <Image src={imageSrc} layout='fill' objectFit='contain'   objectPosition='center' alt='product'/>
+     </div>
+    </>
+    }
    </>
-   }
-  </>
- );
+  );
 };
  
 export default RoomImage;
