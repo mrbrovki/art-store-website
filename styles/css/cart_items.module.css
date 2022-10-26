@@ -6,7 +6,6 @@
     opacity: 1;
   }
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -15,11 +14,10 @@
     opacity: 1;
   }
 }
-
 @media (max-width: 3000px) {
   .cart_items_container {
     position: absolute;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 1.5rem 1.5rem 4rem 1.5rem;
     z-index: 30;
     right: 0;
@@ -33,25 +31,20 @@
   }
   .cart_items_container .item_container {
     margin: 1rem 0;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 6rem 1fr 3rem 1rem;
-        grid-template-columns: 6rem 1fr 3rem 1rem;
+    grid-template-columns: 6rem 1fr 3rem 1rem;
     grid-gap: 0 1rem;
   }
   .cart_items_container .item_container .image_container {
     position: relative;
-    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.907);
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.907);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.907);
     border-radius: 8px;
     overflow: hidden;
     width: 6rem;
     height: 6rem;
   }
   .cart_items_container .item_container .info_container {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
   .cart_items_container .item_container .info_container .name {
     font-weight: 500;
@@ -63,17 +56,12 @@
   }
   .cart_items_container .item_container .price {
     font-size: 1.25rem;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     font-weight: 500;
-    -ms-grid-column-align: right;
-        justify-self: right;
+    justify-self: right;
   }
   .cart_items_container .item_container .cancel {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     font-weight: 700;
   }
   .cart_items_container .item_container .cancel:hover {
@@ -91,28 +79,24 @@
     color: #fff;
   }
 }
-
 @media (max-width: 1024px) {
   .cart_items_container {
     right: 5rem;
     top: 6rem;
   }
 }
-
 @media (max-width: 768px) {
   .cart_items_container {
     right: 4rem;
     top: 6rem;
   }
 }
-
 @media (max-height: 768px) {
   .cart_items_container {
     top: 4rem;
     right: 6rem;
   }
 }
-
 @media (max-width: 600px) {
   .cart_items_container {
     right: 0;
@@ -123,5 +107,4 @@
   .cart_items_container .checkout_link {
     width: calc(100% - 3rem);
   }
-}
-/*# sourceMappingURL=cart_items.module.css.map */
+}/*# sourceMappingURL=cart_items.module.css.map */

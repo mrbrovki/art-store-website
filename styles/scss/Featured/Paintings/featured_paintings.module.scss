@@ -12,129 +12,128 @@
  }
 
  .paintings_container{
-  height: 31rem;
-  position: relative;
+  height: 35rem;
 
-  .carousel{
-   position: relative;
-   display: flex;
-   justify-content: space-between;
-   height: 26rem;
-   width: 360rem;
+  .carousel {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+      width: 360rem;
 
-   .wrapper_1, .wrapper_2{
-    display: flex;
-    width: 180rem;
-    position: absolute;
-    justify-content: space-around;
-    flex-flow: row nowrap;
-   }
+      .wrapper_1,
+      .wrapper_2 {
+        display: flex;
+        width: 180rem;
+        position: absolute;
+        justify-content: space-around;
+        flex-flow: row nowrap;
+        background-color: #fff;
+      }
 
-   .wrapper_1{
-    left: 0;
-    animation: wrapper_1_anim 60s linear infinite;
-   }
+      .wrapper_1 {
+        left: 0;
+        animation: wrapper_1_anim 60s linear infinite;
+      }
 
-   .wrapper_2{
-    left: 180rem;
-    animation: wrapper_2_anim 60s linear infinite;
-   }
-  }
- }
-}
-
-@include max-lg {
-
- .heading{
-  font-size: 2rem;
-  height: 4rem;
- }
-
- .paintings_container{
-  width: 240rem;
-
-  .carousel{
-    height: 22rem;
-    width: 240rem;
-  }
-
-  .wrapper_1,
-  .wrapper_2{
-   width: 120rem;
-  }
-
-  .wrapper_1{
-   animation: wrapper_1_anim 40s linear infinite;
-  }
-
-  .wrapper_2{
-    left: 120rem;
-    animation: wrapper_2_anim 40s linear infinite;
-  }
- }
-}
-
-@include max-tablet {
- 
- .heading{
-  font-size: 2rem;
-  height: 5rem;
-  text-align: center;
- }
-
- .paintings_container{
-  height: 420rem;
-  width: 100%;
-  text-align: center;
-  
-  
-  .carousel{
-   display: block;
-   height: 420rem;
-   width: 100%;
-    
-   .wrapper_1,
-   .wrapper_2{
-    height: 210rem;
-    width: 100%;
-    position: static;
-    align-items: center;
-    flex-flow: column nowrap;
+      .wrapper_2 {
+        left: 180rem;
+        animation: wrapper_2_anim 60s linear infinite;
+      }
     }
   }
- }
-}
+  }
 
-@include tablet{
- @keyframes wrapper_1_anim {
-   0% {
-    left: 0;
-    visibility: visible;
-   }
- 
-   50% {
-    left: -180rem;
-    visibility: hidden;
-   }
- 
-   51% {
-    left: 180rem;
-    visibility: hidden;
-   }
- 
-   100% {
-    left: 0rem;
-    visibility: visible;
-   }
+  @include max-lg {
+
+    .heading {
+      font-size: 2rem;
+      height: 4rem;
+    }
+
+    .paintings_container {
+      width: 240rem;
+      height: 32rem;
+
+      .carousel {
+        height: 22rem;
+        width: 240rem;
+      }
+
+      .wrapper_1,
+      .wrapper_2 {
+        width: 120rem;
+      }
+
+      .wrapper_1 {
+        animation: wrapper_1_anim 40s linear infinite;
+      }
+
+      .wrapper_2 {
+        left: 120rem;
+        animation: wrapper_2_anim 40s linear infinite;
+      }
+    }
   }
- 
-  @keyframes wrapper_2_anim {
-   0% {
-    left: 180rem;
-   }
- 
-   100% {
-    left: -180rem;
-   }
+
+  @include max-tablet {
+
+    .heading {
+      font-size: 2rem;
+      height: 5rem;
+      text-align: center;
+    }
+
+    .paintings_container {
+      height: 420rem;
+      width: 100%;
+      text-align: center;
+
+
+      .carousel {
+        display: block;
+        height: 420rem;
+        width: 100%;
+
+        .wrapper_1,
+        .wrapper_2 {
+          height: 210rem;
+          width: 100%;
+          position: static;
+          align-items: center;
+          flex-flow: column nowrap;
+        }
+      }
+    }
   }
-}
+
+  @include tablet {
+    @keyframes wrapper_1_anim {
+      0% {
+        left: 0;
+      }
+
+      50% {
+        left: -180rem;
+      }
+      51%{
+        left: 180rem;
+        visibility: hidden;
+      }
+
+      100% {
+        visibility: visible;
+        left: 0rem;
+      }
+    }
+
+    @keyframes wrapper_2_anim {
+      0% {
+        left: 180rem;
+      }
+
+      100% {
+        left: -180rem;
+      }
+    }
+  }

@@ -15,14 +15,14 @@ const Paintings:FC<{media: Media}> = ({media}) => {
     <section className={styles.paintings_container}>
       <div className={styles.carousel}>
         <div className={styles.wrapper_1}>
-          {media.slice(0, 7).map(painting => {
+          {media.slice(0, 4).map(painting => {
             return(
               <Painting key={painting.id} src={painting.src.original} id={painting.id}/>
             )
           })}
         </div>
         <div className={styles.wrapper_2}>
-          {media.slice(7, 14).map(painting => {
+          {media.slice(4, 8).map(painting => {
             return(
               <Painting key={painting.id} src={painting.src.original} id={painting.id}/>
             )

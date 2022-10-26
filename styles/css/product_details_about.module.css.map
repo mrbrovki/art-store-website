@@ -1,11 +1,1 @@
-{
-    "version": 3,
-    "mappings": "ACwBA,UAAU,CAAV,MAAU;EACR,IAAI;IACH,OAAO,EAAE,CAAC;;EAGX,EAAE;IACD,OAAO,EAAE,CAAC;;;;ACkCZ,MAAM,EAAE,SAAS,EAAE,MAAM;EF3DzB,AAAA,KAAK,CAAA;IACJ,WAAW,EAAE,GAAG;IAChB,MAAM,EAAE,MAAM;GACd;EAED,AAAA,OAAO,CAAA;IACN,WAAW,EAAE,GAAG;IAChB,MAAM,EAAE,CAAC;GACT;EAED,AAAA,iBAAiB,CAAA;IAChB,WAAW,EAAE,QAAQ;IACrB,KAAK,ECXS,OAAO;GDYrB;EAED,AAAA,YAAY,CAAA;IACX,SAAS,EAAE,MAAM;IACjB,KAAK,EChBS,OAAO;GD4BrB;EAdD,AAIC,YAJW,AAIV,OAAO,CAAA;IACP,MAAM,EAAE,CAAC;IACT,OAAO,EAAE,EAAE;IACX,UAAU,EAAE,IAAI;IAChB,OAAO,EAAE,KAAK;IACd,KAAK,EAAE,IAAI;IACX,MAAM,EAAE,GAAG;IACX,gBAAgB,ECfH,SAAS;IDgBtB,UAAU,EAAE,mBAAmB;GAC/B",
-    "sources": [
-        "../scss/Product/Details/product_details_about.module.scss",
-        "../scss/_variables.scss",
-        "../scss/_breakpoints.scss"
-    ],
-    "names": [],
-    "file": "product_details_about.module.css"
-}
+{"version":3,"sources":["../scss/_variables.scss","product_details_about.module.css","../scss/_breakpoints.scss","../scss/Product/Details/product_details_about.module.scss"],"names":[],"mappings":"AAwBA;EACE;IACC,UAAA;ECvBD;ED0BA;IACC,UAAA;ECxBD;AACF;ADiBA;EACE;IACC,UAAA;ECvBD;ED0BA;IACC,UAAA;ECxBD;AACF;ACyDC;EC3DA;IACC,gBAAA;IACA,cAAA;EFKA;EEFD;IACC,gBAAA;IACA,SAAA;EFIA;EEDD;IACC,qBAAA;IACA,cHXc;ECcd;EEAD;IACC,iBAAA;IACA,cHhBc;ECkBd;EEAA;IACC,SAAA;IACA,WAAA;IACA,gBAAA;IACA,cAAA;IACA,WAAA;IACA,WAAA;IACA,6CHfa;IGgBb,iDAAA;EFED;AACF","file":"product_details_about.module.css"}

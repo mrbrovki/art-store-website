@@ -6,7 +6,6 @@
     opacity: 1;
   }
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -15,7 +14,6 @@
     opacity: 1;
   }
 }
-
 @media (max-width: 3000px) {
   .heading {
     text-transform: capitalize;
@@ -25,32 +23,23 @@
     margin: 10rem 8rem 0;
   }
   .paintings_container {
-    height: 31rem;
-    position: relative;
+    height: 35rem;
   }
   .paintings_container .carousel {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    height: 26rem;
+    justify-content: space-between;
+    height: 100%;
     width: 360rem;
   }
-  .paintings_container .carousel .wrapper_1, .paintings_container .carousel .wrapper_2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
+  .paintings_container .carousel .wrapper_1,
+.paintings_container .carousel .wrapper_2 {
     display: flex;
     width: 180rem;
     position: absolute;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    background-color: #fff;
   }
   .paintings_container .carousel .wrapper_1 {
     left: 0;
@@ -63,7 +52,6 @@
             animation: wrapper_2_anim 60s linear infinite;
   }
 }
-
 @media (max-width: 1024px) {
   .heading {
     font-size: 2rem;
@@ -71,13 +59,14 @@
   }
   .paintings_container {
     width: 240rem;
+    height: 32rem;
   }
   .paintings_container .carousel {
     height: 22rem;
     width: 240rem;
   }
   .paintings_container .wrapper_1,
-  .paintings_container .wrapper_2 {
+.paintings_container .wrapper_2 {
     width: 120rem;
   }
   .paintings_container .wrapper_1 {
@@ -90,7 +79,6 @@
             animation: wrapper_2_anim 40s linear infinite;
   }
 }
-
 @media (max-width: 600px) {
   .heading {
     font-size: 2rem;
@@ -108,55 +96,45 @@
     width: 100%;
   }
   .paintings_container .carousel .wrapper_1,
-  .paintings_container .carousel .wrapper_2 {
+.paintings_container .carousel .wrapper_2 {
     height: 210rem;
     width: 100%;
     position: static;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
+    align-items: center;
+    flex-flow: column nowrap;
   }
 }
-
 @media (min-width: 600px) {
   @-webkit-keyframes wrapper_1_anim {
     0% {
       left: 0;
-      visibility: visible;
     }
     50% {
       left: -180rem;
-      visibility: hidden;
     }
     51% {
       left: 180rem;
       visibility: hidden;
     }
     100% {
-      left: 0rem;
       visibility: visible;
+      left: 0rem;
     }
   }
   @keyframes wrapper_1_anim {
     0% {
       left: 0;
-      visibility: visible;
     }
     50% {
       left: -180rem;
-      visibility: hidden;
     }
     51% {
       left: 180rem;
       visibility: hidden;
     }
     100% {
-      left: 0rem;
       visibility: visible;
+      left: 0rem;
     }
   }
   @-webkit-keyframes wrapper_2_anim {
@@ -175,5 +153,4 @@
       left: -180rem;
     }
   }
-}
-/*# sourceMappingURL=featured_paintings.module.css.map */
+}/*# sourceMappingURL=featured_paintings.module.css.map */

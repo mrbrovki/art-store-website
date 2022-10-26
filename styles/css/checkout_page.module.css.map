@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,eAAe,CAAA;EACd,UAAU,EAAE,MAAM;EAClB,UAAU,EAAE,KAAK;EACjB,SAAS,EAAE,IAAI;CACf",
-    "sources": [
-        "../scss/checkout_page.module.scss"
-    ],
-    "names": [],
-    "file": "checkout_page.module.css"
-}
+{"version":3,"sources":["../scss/checkout_page.module.scss","checkout_page.module.css"],"names":[],"mappings":"AAAA;EACC,kBAAA;EACA,iBAAA;EACA,eAAA;ACCD","file":"checkout_page.module.css"}

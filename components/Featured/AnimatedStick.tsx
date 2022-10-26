@@ -7,9 +7,12 @@ import styles from '../../styles/css/featured_animated_stick.module.css';
 
 const AnimatedStick:FC = () => {
  return (
-  <div className={styles.stick_container}>
-    <Image src='/assets/stick.gif' layout='fill' objectFit='contain' objectPosition='center center' alt='animated stick'/>
-  </div>
+  <>
+    <div className={styles.wrapper}>
+      <iframe src="https://giphy.com/embed/3o7TKnnTyK6tYMNAxW"  frameBorder="0" className="giphy-embed"></iframe>
+      <div className={styles.overlay}></div>
+    </div>
+  </>
  );
 };
  

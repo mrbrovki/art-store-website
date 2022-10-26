@@ -6,7 +6,6 @@
     opacity: 1;
   }
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -15,25 +14,32 @@
     opacity: 1;
   }
 }
-
 @media (max-width: 3000px) {
-  .stick_container {
-    position: relative;
+  .wrapper {
     width: 100%;
     height: 10rem;
-    border-bottom: 1px solid black;
+    position: relative;
+  }
+  .wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+  }
+  .wrapper .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
   }
 }
-
 @media (max-width: 768px) {
-  .stick_container {
+  .wrapper {
     height: 8rem;
   }
 }
-
 @media (max-width: 600px) {
-  .stick_container {
+  .wrapper {
     display: none;
   }
-}
-/*# sourceMappingURL=featured_animated_stick.module.css.map */
+}/*# sourceMappingURL=featured_animated_stick.module.css.map */

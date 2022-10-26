@@ -6,7 +6,6 @@
     opacity: 1;
   }
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -15,14 +14,11 @@
     opacity: 1;
   }
 }
-
 @media (max-width: 3000px) {
   .image_container {
     position: relative;
     height: 70%;
     width: 70%;
-    -webkit-filter: drop-shadow(0 0 16px #0000003f);
-            filter: drop-shadow(0 0 16px #0000003f);
+    filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.2470588235));
   }
-}
-/*# sourceMappingURL=product_view_image.module.css.map */
+}/*# sourceMappingURL=product_view_image.module.css.map */

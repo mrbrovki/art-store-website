@@ -6,7 +6,6 @@
     opacity: 1;
   }
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -15,30 +14,24 @@
     opacity: 1;
   }
 }
-
 @media (max-width: 3000px) {
   .painting_container {
-    height: 26rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-flow: column nowrap;
+    justify-content: center;
   }
   .painting_container .image_container {
     position: relative;
-    width: 22rem;
-    height: 22rem;
-    -webkit-filter: drop-shadow(0 0 10px #00000057);
-            filter: drop-shadow(0 0 10px #00000057);
+    width: 35rem;
+    height: 25rem;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.5647058824));
+    margin-bottom: 2rem;
   }
   .painting_container .painting_name,
-  .painting_container .artist_name {
+.painting_container .artist_name {
     margin: 0;
     text-align: center;
   }
@@ -46,11 +39,9 @@
     font-weight: 500;
   }
   .painting_container:hover {
-    -webkit-box-shadow: 0 0 10px #00000021;
-            box-shadow: 0 0 10px #00000021;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1294117647);
   }
 }
-
 @media (max-width: 1024px) {
   .painting_container {
     height: 22rem;
@@ -60,7 +51,6 @@
     width: 18rem;
   }
 }
-
 @media (max-width: 600px) {
   .painting_container {
     height: 30rem;
@@ -71,14 +61,12 @@
     height: 25rem;
   }
   .painting_container .image_container .painting_name,
-  .painting_container .image_container .artist_name {
+.painting_container .image_container .artist_name {
     line-height: 2.5rem;
     margin: 0;
     text-align: center;
   }
   .painting_container:hover {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
-}
-/*# sourceMappingURL=featured_paintings_painting.module.css.map */
+}/*# sourceMappingURL=featured_paintings_painting.module.css.map */

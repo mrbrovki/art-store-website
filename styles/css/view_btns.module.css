@@ -6,7 +6,6 @@
     opacity: 1;
   }
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -15,17 +14,12 @@
     opacity: 1;
   }
 }
-
 @media (max-width: 3000px) {
   .container {
     border: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #0000;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
     color: #666666;
   }
   .container span {
@@ -34,5 +28,4 @@
   .container:hover {
     cursor: pointer;
   }
-}
-/*# sourceMappingURL=view_btns.module.css.map */
+}/*# sourceMappingURL=view_btns.module.css.map */

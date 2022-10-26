@@ -6,7 +6,6 @@
     opacity: 1;
   }
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -15,7 +14,6 @@
     opacity: 1;
   }
 }
-
 @media (max-width: 3000px) {
   .add_to_cart {
     width: 100%;
@@ -31,5 +29,4 @@
   .add_to_cart:hover {
     cursor: pointer;
   }
-}
-/*# sourceMappingURL=add_to_cart.module.css.map */
+}/*# sourceMappingURL=add_to_cart.module.css.map */

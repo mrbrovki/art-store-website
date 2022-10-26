@@ -6,7 +6,6 @@
     opacity: 1;
   }
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -15,7 +14,6 @@
     opacity: 1;
   }
 }
-
 @media (max-width: 3000px) {
   .icon_container {
     position: relative;
@@ -25,5 +23,4 @@
   .icon_container:hover {
     cursor: pointer;
   }
-}
-/*# sourceMappingURL=cart.module.css.map */
+}/*# sourceMappingURL=cart.module.css.map */

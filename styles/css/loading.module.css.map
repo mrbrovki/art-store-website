@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,UAAU,CAAA;EACT,UAAU,EAAE,KAAK;EACjB,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,IAAI;CACf",
-    "sources": [
-        "../scss/loading.module.scss"
-    ],
-    "names": [],
-    "file": "loading.module.css"
-}
+{"version":3,"sources":["../scss/loading.module.scss","loading.module.css"],"names":[],"mappings":"AAAA;EACC,iBAAA;EACA,kBAAA;EACA,eAAA;ACCD","file":"loading.module.css"}

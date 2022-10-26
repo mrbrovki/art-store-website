@@ -1,10 +1,1 @@
-{
-    "version": 3,
-    "mappings": "ACwBA,UAAU,CAAV,MAAU;EACR,IAAI;IACH,OAAO,EAAE,CAAC;;EAGX,EAAE;IACD,OAAO,EAAE,CAAC;;;;AD5Bb,AAAA,QAAQ,CAAC;EACR,QAAQ,EAAE,KAAK;EACf,GAAG,EAAE,CAAC;EACN,IAAI,EAAE,CAAC;EACP,OAAO,EAAE,EAAE;EACX,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,gBAAgB,ECGA,SAAS;EASzB,SAAS,EAAG,oBACb;CDXC",
-    "sources": [
-        "../scss/Layout/overlay.module.scss",
-        "../scss/_variables.scss"
-    ],
-    "names": [],
-    "file": "overlay.module.css"
-}
+{"version":3,"sources":["../scss/_variables.scss","overlay.module.css","../scss/Layout/overlay.module.scss"],"names":[],"mappings":"AAwBA;EACE;IACC,UAAA;ECvBD;ED0BA;IACC,UAAA;ECxBD;AACF;ADiBA;EACE;IACC,UAAA;ECvBD;ED0BA;IACC,UAAA;ECxBD;AACF;ACLA;EACC,eAAA;EACA,MAAA;EACA,OAAA;EACA,WAAA;EACA,WAAA;EACA,YAAA;EACA,6CFGgB;EAShB,uCAAA;UAAA,+BAAA;ACJD","file":"overlay.module.css"}

@@ -11,7 +11,7 @@ const Painting:FC<{src: string, id: number}> = ({src, id}) => {
    <Link href={`/paintings/${id}`} passHref>
     <a className={styles.painting_container}>
      <div className={styles.image_container}>
-      <Image src={src} layout='fill' objectFit='contain' objectPosition='center' lazyBoundary='300px' alt='featured painting'/>
+      <Image src={src} layout='fill' objectFit='contain' objectPosition='center' lazyBoundary='500px' alt='featured painting' quality={45}/>
      </div>
      <p className={styles.painting_name}>Wallowing Breeze</p>
      <p className={styles.artist_name}>Pablo Picasso</p>

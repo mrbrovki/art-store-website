@@ -1,11 +1,1 @@
-{
-    "version": 3,
-    "mappings": "ACwBA,UAAU,CAAV,MAAU;EACR,IAAI;IACH,OAAO,EAAE,CAAC;;EAGX,EAAE;IACD,OAAO,EAAE,CAAC;;;;ACkCZ,MAAM,EAAE,SAAS,EAAE,MAAM;EF3DzB,AAAA,MAAM,CAAA;IACL,SAAS,EAAE,IAAI;IACf,MAAM,EAAE,MAAM;IACd,WAAW,EAAE,GAAG;GAChB;EAED,AAAA,SAAS;EACT,KAAK,CAAA;IACJ,OAAO,EAAG,IAAI;IACd,WAAW,EAAE,MAAM;GAQnB;EAXD,AAKC,SALQ,CAKR,gBAAgB;EAJjB,KAAK,CAIJ,gBAAgB,CAAA;IACf,KAAK,EAAE,IAAI;IACX,MAAM,EAAE,IAAI;IACZ,QAAQ,EAAE,QAAQ;IAClB,OAAO,EAAE,YAAY;GACrB",
-    "sources": [
-        "../scss/Product/Details/Shipment/product_details_shipment.module.scss",
-        "../scss/_variables.scss",
-        "../scss/_breakpoints.scss"
-    ],
-    "names": [],
-    "file": "product_details_shipment.module.css"
-}
+{"version":3,"sources":["../scss/_variables.scss","product_details_shipment.module.css","../scss/_breakpoints.scss","../scss/Product/Details/Shipment/product_details_shipment.module.scss"],"names":[],"mappings":"AAwBA;EACE;IACC,UAAA;ECvBD;ED0BA;IACC,UAAA;ECxBD;AACF;ADiBA;EACE;IACC,UAAA;ECvBD;ED0BA;IACC,UAAA;ECxBD;AACF;ACyDC;EC3DA;IACC,eAAA;IACA,cAAA;IACA,gBAAA;EFKA;EEFD;;IAEC,aAAA;IACA,mBAAA;EFIA;EEFA;;IACC,WAAA;IACA,YAAA;IACA,kBAAA;IACA,qBAAA;EFKD;AACF","file":"product_details_shipment.module.css"}

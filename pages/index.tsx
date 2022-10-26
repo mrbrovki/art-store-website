@@ -11,7 +11,7 @@ import Featured from '../components/Featured';
 export const getStaticProps:GetStaticProps = async () => {
   const artists:FeaturedArtist[] = await (await fetch('https://my-json-server.typicode.com/mrbrovki/demo/avatars')).json();
   const client = createClient(process.env.ENV_PEXELS_API_KEY as string);
-  const collectionData = await client.collections.media({id:'luyg7mw'});
+  const collectionData = await client.collections.media({id:'1pkem4a'});
   return { 
     props: {artists, collectionData}
   };

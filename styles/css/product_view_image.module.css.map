@@ -1,11 +1,1 @@
-{
-    "version": 3,
-    "mappings": "ACwBA,UAAU,CAAV,MAAU;EACR,IAAI;IACH,OAAO,EAAE,CAAC;;EAGX,EAAE;IACD,OAAO,EAAE,CAAC;;;;ACkCZ,MAAM,EAAE,SAAS,EAAE,MAAM;EF5DzB,AAAA,gBAAgB,CAAA;IACf,QAAQ,EAAE,QAAQ;IAClB,MAAM,EAAE,GAAG;IACX,KAAK,EAAE,GAAG;IACV,MAAM,EAAE,+BAAuC;GAC9C",
-    "sources": [
-        "../scss/Product/View/product_view_image.module.scss",
-        "../scss/_variables.scss",
-        "../scss/_breakpoints.scss"
-    ],
-    "names": [],
-    "file": "product_view_image.module.css"
-}
+{"version":3,"sources":["../scss/_variables.scss","product_view_image.module.css","../scss/_breakpoints.scss","../scss/Product/View/product_view_image.module.scss"],"names":[],"mappings":"AAwBA;EACE;IACC,UAAA;ECvBD;ED0BA;IACC,UAAA;ECxBD;AACF;ADiBA;EACE;IACC,UAAA;ECvBD;ED0BA;IACC,UAAA;ECxBD;AACF;ACyDC;EC5DA;IACC,kBAAA;IACA,WAAA;IACA,UAAA;IACA,yDAAA;EFMA;AACF","file":"product_view_image.module.css"}

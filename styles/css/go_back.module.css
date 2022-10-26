@@ -6,7 +6,6 @@
     opacity: 1;
   }
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -15,7 +14,6 @@
     opacity: 1;
   }
 }
-
 @media (max-width: 3000px) {
   .btn {
     position: absolute;
@@ -31,12 +29,10 @@
     cursor: pointer;
   }
 }
-
 .visible {
   display: block;
 }
 
 .hidden {
   display: none;
-}
-/*# sourceMappingURL=go_back.module.css.map */
+}/*# sourceMappingURL=go_back.module.css.map */
