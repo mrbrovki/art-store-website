@@ -1,26 +1,33 @@
-import React, {FC} from 'react';
-import Image from 'next/image';
-import { useRouter } from 'next/router';
+import React, { FC } from "react";
+import Image from "next/image";
+import { useRouter } from "next/router";
 // types
-import { CategoryProduct } from '../../../lib/Types';
+import { CategoryProduct } from "../../../lib/Types";
 // styles
-import styles from '../../../styles/css/category_products_product.module.css';
+import styles from "../../../styles/css/category_products_product.module.css";
 
-
-
-const Product:FC<CategoryProduct> = ({imageSrc, name, author, id}) => {
+const Product: FC<CategoryProduct> = ({ imageSrc, name, author, id }) => {
   const router = useRouter();
   return (
-   <div className={styles.product_container} onClick={() => router.push(`/${router.query.category}/${id}`)}>
-     <div className={styles.image_container}>
-      <Image src={imageSrc} layout='fill' objectFit='cover' objectPosition='center' quality={50} alt='category product'/>
-     </div>
-     <div className={styles.details}>
-      <p className={styles.name}>{name}</p>
-      <p className={styles.author}>{author}</p>
-     </div>
-   </div>
+    <div
+      className={styles.product_container}
+      onClick={() => router.push(`/${router.query.category}/${id}`)}
+    >
+      <div className={styles.image_container}>
+        <Image
+          src={imageSrc}
+          fill
+          style={{ objectFit: "cover", objectPosition: "center" }}
+          quality={50}
+          alt="category product"
+        />
+      </div>
+      <div className={styles.details}>
+        <p className={styles.name}>{name}</p>
+        <p className={styles.author}>{author}</p>
+      </div>
+    </div>
   );
 };
- 
+
 export default Product;
