@@ -1,26 +1,29 @@
-import React from 'react';
+import React from "react";
 import { GetStaticProps, NextPage } from "next";
-import { createClient } from 'pexels';
+import { createClient } from "pexels";
 //  types
-import { CollectionData, FeaturedArtist } from '../lib/Types';
+import { CollectionData, FeaturedArtist } from "../lib/Types";
 // components
-import Featured from '../components/Featured';
+import Featured from "../components/Featured";
+// constants
+import { featuredArtists } from "../lib/constants";
 
-
-
-export const getStaticProps:GetStaticProps = async () => {
-  const artists:FeaturedArtist[] = await (await fetch('https://my-json-server.typicode.com/mrbrovki/demo/avatars')).json();
+export const getStaticProps: GetStaticProps = async () => {
+  const artists: FeaturedArtist[] = featuredArtists;
   const client = createClient(process.env.ENV_PEXELS_API_KEY as string);
-  const collectionData = await client.collections.media({id:'1pkem4a'});
-  return { 
-    props: {artists, collectionData}
+  const collectionData = await client.collections.media({ id: "1pkem4a" });
+  return {
+    props: { artists, collectionData },
   };
 };
 
-const Home:NextPage<{artists: FeaturedArtist[], collectionData: CollectionData}> = ({artists, collectionData}) => {
+const Home: NextPage<{
+  artists: FeaturedArtist[];
+  collectionData: CollectionData;
+}> = ({ artists, collectionData }) => {
   return (
     <>
-      <Featured artists={artists} collectionData={collectionData}/>
+      <Featured artists={artists} collectionData={collectionData} />
     </>
   );
 };
