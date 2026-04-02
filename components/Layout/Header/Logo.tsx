@@ -4,10 +4,12 @@ import Link from "next/link";
 
 const Logo: FC = () => {
   return (
-    <Link href="/">
-      <div>
-        <Image src="/assets/logo.svg" width={154} height={28} alt="logo" />
-      </div>
+    <Link href="/" passHref legacyBehavior>
+      <a>
+        <div>
+          <Image src="/assets/logo.svg" width={154} height={28} alt="logo" />
+        </div>
+      </a>
     </Link>
   );
 };
